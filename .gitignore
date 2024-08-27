@@ -1,0 +1,13 @@
+# Ignore everything
+/*
+
+# But not these files...
+!.gitignore
+!README.md
+!/gtk-3.0/
+!/htop/
+!/kitty/
+!/nvim/
+!/polybar/
+!/zathura/
+!mimeapps.list
