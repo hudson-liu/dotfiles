@@ -20,7 +20,7 @@ return {
   	    "vim", "lua", "vimdoc",
         "html", "css", "python", "csv",
         "latex", "cpp", "c", "gitignore",
-        "toml", "yaml", "java", "json"
+        "toml", "yaml", "java", "json", "norg"
   	  },
   	},
   },
@@ -68,19 +68,7 @@ return {
   },
 
   {
-    "mistricky/codesnap.nvim",
-    lazy = false,
-    build = "make",
-    keys = {
-      { "<leader>cc", "<cmd> CodeSnap <cr>", mode = "x"}
-    },
-    opts = {
-      save_path = "~/Pictures",
-      has_breadcrumbs = true,
-      bg_theme = "bamboo",
-      bg_x_padding = 60,
-      bg_y_padding = 40,
-      watermark = ""
-    }
+    'dhruvasagar/vim-table-mode',
+    lazy = false
   }
 }
