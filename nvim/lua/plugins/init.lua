@@ -85,5 +85,17 @@ return {
         vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
       end,
     }
+  },
+
+  {
+    'nvimdev/lspsaga.nvim',
+    lazy = false,
+    config = function()
+        require('lspsaga').setup({})
+    end,
+    dependencies = {
+        'nvim-treesitter/nvim-treesitter', -- optional
+        'nvim-tree/nvim-web-devicons',     -- optional
+    }
   }
 }
