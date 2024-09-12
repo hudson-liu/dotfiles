@@ -14,4 +14,6 @@ map ("n", "<leader>cq", "<cmd> VimtexStop <cr>")
 map ("v", "<leader>dd", "<Plug>SlimeRegionSend")
 map ("n", "<leader>dd", "<Plug>SlimeParagraphSend")
 map ("n", "<leader>dc", "<cmd> SlimeConfig <cr>")
+
+map ("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
