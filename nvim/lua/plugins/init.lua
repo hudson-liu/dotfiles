@@ -84,18 +84,21 @@ return {
         vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
         vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
       end,
+      layout = {
+        width = 20,
+      }
     }
   },
 
   {
-    'nvimdev/lspsaga.nvim',
-    lazy = false,
-    config = function()
-        require('lspsaga').setup({})
-    end,
+    "utilyre/barbecue.nvim",
+    event = "LspAttach",
+    name = "barbecue",
+    version = "*",
     dependencies = {
-        'nvim-treesitter/nvim-treesitter', -- optional
-        'nvim-tree/nvim-web-devicons',     -- optional
-    }
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+    opts = {}
   }
 }
