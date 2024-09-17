@@ -20,7 +20,7 @@ return {
   	    "vim", "lua", "vimdoc",
         "html", "css", "python", "csv",
         "latex", "cpp", "c", "gitignore",
-        "toml", "yaml", "java", "json", "norg"
+        "toml", "yaml", "java", "json", "markdown"
   	  },
   	},
   },
@@ -36,24 +36,20 @@ return {
   },
 
   {
-    "nvim-neorg/neorg",
+    "vimwiki/vimwiki",
     lazy = false,
-    version = "*",
-    config = true,
-    opts = function()
-      local conf = require "neorg"
-      conf.load = {
-        ["core.defaults"] = {},
-        ["core.dirman"] = {
-          config = {
-            workspaces = {
-              notes = "~/Documents/Notes/"
-            },
-          },
-        },
-        ["core.concealer"] = {}
+    init = function()
+      vim.g.vimwiki_list = {
+        {
+          path = "~/Documents/Notes",
+          syntax = "markdown",
+          ext = "md"
+        }
       }
-      return conf
+      vim.g.vimwiki_filetypes = {"markdown"} -- note to self. needed for compat w aerial
+      vim.g.vimwiki_global_ext = 0
+      vim.keymap.set("n", "<leader>wq", "<Plug>VimwikiNextLink")
+      vim.keymap.set("n", "<leader>wu", "<Plug>VimwikiPrevLink")
     end,
   },
 
@@ -68,11 +64,6 @@ return {
   },
 
   {
-    "dhruvasagar/vim-table-mode",
-    lazy = false
-  },
-
-  {
     "stevearc/aerial.nvim",
     lazy = false,
     dependencies = {
@@ -80,6 +71,9 @@ return {
       "nvim-tree/nvim-web-devicons"
     },
     opts = {
+      backends = {
+        ["vimwiki"] = {"markdown"},
+      },
       on_attach = function(bufnr)
         vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
         vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
