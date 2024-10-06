@@ -6,10 +6,8 @@
   <br>
   Nord-Themed Dotfiles
   <br>
-  <img src="[https://img.shields.io/badge/version-0.1.1--alpha-blue?style=for-the-badge](https://img.shields.io/github/commit-activity/y/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac
-)" alt="Commit Frequency">
-  <img src="[https://img.shields.io/github/commit-activity/y/Johns-Hopkins-CISRE/MISST?style=for-the-badge](https://img.shields.io/github/license/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac
-)" alt="License">
+  <img src="https://img.shields.io/github/commit-activity/y/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac" alt="Commit Frequency">
+  <img src="https://img.shields.io/github/license/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac" alt="License">
 </h1>
 
 My nord
