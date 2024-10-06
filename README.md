@@ -1,2 +1,15 @@
-# Dotfiles
-dotfiles for my nord themed arch setup
+<h1 align="center">
+  <picture>
+    <source srcset="https://github.com/Johns-Hopkins-CISRE/MISST/blob/main/docs/img/Logo%20White.png?raw=true">
+    <img alt="MISST's Logo" width="30%" height="30%" src="https://github.com/Johns-Hopkins-CISRE/MISST/blob/main/docs/img/Logo%20Black.png?raw=true">
+  </picture>
+  <br>
+  Nord-Themed Dotfiles
+  <br>
+  <img src="[https://img.shields.io/badge/version-0.1.1--alpha-blue?style=for-the-badge](https://img.shields.io/github/commit-activity/y/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac
+)" alt="Commit Frequency">
+  <img src="[https://img.shields.io/github/commit-activity/y/Johns-Hopkins-CISRE/MISST?style=for-the-badge](https://img.shields.io/github/license/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac
+)" alt="License">
+</h1>
+
+My nord
