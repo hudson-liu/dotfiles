@@ -29,5 +29,6 @@ bspc config normal_border_color \#5E81AC
 bspc rule -a zoom state=floating
 bspc rule -a feh state=floating rectangle=1000x500+0+0 center=true
 bspc rule -a chrome rectangle=1000x500+0+0 center=true
+bspc rule -a thunar state=floating rectangle=1000x500+0+0 center=true
 # bspc rule -a sxiv state=floating rectangle=367x367+1200+200
 bspc rule -a kitty rectangle=1000x500+0+0 center=true

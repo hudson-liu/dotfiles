@@ -2,6 +2,10 @@ vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 vim.g.table_mode_corner = "|"
 
+if vim.g.neovide then
+  vim.o.guifont = "FiraCode Nerd Font:h9"
+end
+
 vim.api.nvim_create_autocmd("FileType", {
   pattern = {"norg", "lua"},
   callback = function()
