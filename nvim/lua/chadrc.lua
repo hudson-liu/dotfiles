@@ -4,8 +4,30 @@
 ---@type ChadrcConfig
 local M = {}
 
+M.ui = {
+  statusline = {
+order = { "mode", "file", "git", "word_count", "%=", "lsp_msg", "%=", "lsp", "cwd" },
+    modules = {
+      word_count = function()
+        local line = vim.api.nvim_get_current_line()
+        local words = {}
+
+        for word in string.gmatch(line, "%w+") do
+          table.insert(words, word)
+        end
+
+        if vim.g.show_words_in_line then
+          return " %#StText#L:" .. #words .. " "
+        else
+          return ""
+        end
+      end
+    }
+  }
+}
+
 M.base46 = {
-	theme = "nord",
+	theme = "onenord",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
