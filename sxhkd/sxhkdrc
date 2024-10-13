@@ -15,6 +15,11 @@ super + shift + y
 ctrl + alt + {Left,Down,Up,Right}
     tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
 
+super + minus
+    bspc config window_gap $((`bspc config window_gap` + 2))
+#
+super + plus
+    bspc config window_gap $((`bspc config window_gap` - 2))
 # create/remove from tabbed container
 super + z 
     id=$(bspc query -N -n); \
