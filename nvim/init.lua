@@ -4,7 +4,7 @@ vim.g.table_mode_corner = "|"
 vim.g.show_words_in_line = true
 
 if vim.g.neovide then
-  vim.o.guifont = "FiraCode Nerd Font:h9"
+  vim.o.guifont = "Iosevka Nerd Font:h11"
 end
 
 vim.api.nvim_create_autocmd("FileType", {

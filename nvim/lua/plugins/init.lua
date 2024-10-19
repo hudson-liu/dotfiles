@@ -94,5 +94,10 @@ return {
       "nvim-tree/nvim-web-devicons", -- optional dependency
     },
     opts = {}
+  },
+
+  {
+    'mfussenegger/nvim-jdtls',
+    lazy = false
   }
 }
