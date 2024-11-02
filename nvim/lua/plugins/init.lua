@@ -99,5 +99,15 @@ return {
   {
     'mfussenegger/nvim-jdtls',
     lazy = false
+  },
+
+  {
+    "nvchad/showkeys",
+    cmd = "ShowkeysToggle"
+  },
+
+  {
+    "nvchad/timerly",
+    cmd = "TimerlyToggle"
   }
 }

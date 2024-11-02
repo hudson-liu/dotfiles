@@ -27,7 +27,7 @@ order = { "mode", "file", "git", "word_count", "%=", "lsp_msg", "%=", "lsp", "cw
 }
 
 M.base46 = {
-	theme = "nord",
+	theme = "onenord",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
