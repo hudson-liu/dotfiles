@@ -11,9 +11,10 @@
 !/polybar/
 !/zathura/
 !mimeapps.list
-!/mpd/
-!/ncmpcpp/
+#!/mpd/
+#!/ncmpcpp/
 !/bspwm/
 !/sxhkd/
 !.vimrc
 !/picom/
+!/yazi/

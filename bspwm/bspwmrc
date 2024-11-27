@@ -6,25 +6,35 @@ flashfocus &
 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
+xinput set-prop "Apple Inc. Magic Trackpad 2" 297 -0.2
+xinput set-prop "Apple Inc. Magic Trackpad 2" 300 0.5 0 0 
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # feh --bg-fill /home/jimmy/Pictures/Wallpapers/scaledextend.png --bg-fill /home/jimmy/Pictures/Wallpapers/ricer.jpg &
-feh --bg-fill /home/jimmy/Pictures/Wallpapers/nord5.jpg &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"Tokyo Night.jpg" &
+#feh --bg-fill /home/j/Pictures/Wallpapers/"waves.png" &
+feh --bg-fill /home/j/Pictures/Wallpapers/"nord4.png" &
 
-bash /home/jimmy/.config/polybar/launch.sh --grayblocks &
+# bash /home/jimmy/.config/polybar/launch.sh --grayblocks &
+polybar &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         4
-bspc config window_gap          40
+bspc config border_width         2
+bspc config window_gap          20
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-#bspc config focused_border_color \#2E3440
-#bspc config active_border_color \#2E3440
-#bspc config normal_border_color \#2E3440
+# bspc config focused_border_color \#f7768e
+# bspc config active_border_color \#f7768e
+# bspc config normal_border_color \#bb9af7
+
+# bspc config focused_border_color \#a6accd
+# bspc config active_border_color \#a6accd
+# bspc config normal_border_color \#a6accd
 
 bspc config focused_border_color \#5E81AC
 bspc config active_border_color \#5E81AC
@@ -34,4 +44,4 @@ bspc rule -a zoom state=floating
 bspc rule -a feh state=floating rectangle=1000x500+0+0 center=true
 bspc rule -a chrome rectangle=1000x500+0+0 center=true
 bspc rule -a Thunar state=floating rectangle=1000x500+0+0 center=true
-bspc rule -a kitty rectangle=1000x500+0+0 center=true
+bspc rule -a kitty rectangle=500x370+0+0 center=true

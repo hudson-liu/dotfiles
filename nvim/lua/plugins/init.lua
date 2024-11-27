@@ -19,7 +19,7 @@ return {
   	  ensure_installed = {
   	    "vim", "lua", "vimdoc",
         "html", "css", "python", "csv",
-        "latex", "cpp", "c", "gitignore",
+        "cpp", "c", "gitignore",
         "toml", "yaml", "java", "json", "markdown"
   	  },
   	},
@@ -88,5 +88,18 @@ return {
   {
     "nvchad/timerly",
     cmd = "TimerlyToggle"
+  },
+
+  {
+    "karb94/neoscroll.nvim",
+    lazy = false,
+    config = function ()
+      require("neoscroll").setup({})
+    end
+  },
+
+  {
+    "nvchad/typr",
+    lazy = false
   }
 }

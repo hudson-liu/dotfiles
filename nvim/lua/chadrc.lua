@@ -6,7 +6,10 @@ local M = {}
 
 M.ui = {
   statusline = {
-order = { "mode", "file", "git", "word_count", "%=", "lsp_msg", "%=", "lsp", "cwd" },
+    -- order = { "mode", "file", "git", "word_count", "%=", "lsp_msg", "%=", "lsp", "cwd" },
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "lsp", "cwd" },
+    theme = "minimal",
+    -- seperator_style = "block", -- default, round, block, arrow
     modules = {
       word_count = function()
         local line = vim.api.nvim_get_current_line()
@@ -27,12 +30,12 @@ order = { "mode", "file", "git", "word_count", "%=", "lsp_msg", "%=", "lsp", "cw
 }
 
 M.base46 = {
-	theme = "onenord",
+	theme = "nord",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	hl_override = {
+	 	Comment = { italic = true },
+	 	["@comment"] = { italic = true },
+	 },
 }
 
 M.nvdash = {

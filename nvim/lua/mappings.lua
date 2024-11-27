@@ -16,4 +16,6 @@ map ("n", "<leader>dd", "<Plug>SlimeParagraphSend")
 map ("n", "<leader>dc", "<cmd> SlimeConfig <cr>")
 
 map ("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+
+map ("n", "<leader>cu", "<cmd> ShowkeysToggle <cr>")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
