@@ -17,7 +17,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 feh --bg-fill /home/j/Pictures/Wallpapers/"nord4.png" &
 
 # bash /home/jimmy/.config/polybar/launch.sh --grayblocks &
-polybar &
+bash /home/j/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
