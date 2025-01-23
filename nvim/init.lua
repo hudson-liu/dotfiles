@@ -2,6 +2,10 @@ vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 vim.g.table_mode_corner = "|"
 vim.g.show_words_in_line = true
+vim.g.vimtex_compiler_method = 'latexmk'
+vim.g.vimtex_compiler_latexmk = {
+  build_dir = '/home/j/Documents/Notes/LaTeX_Build/',
+}
 
 if vim.g.neovide then
   vim.o.guifont = "FiraCode_Nerd_Font:h9:w-0.4"
