@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/license/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac" alt="License">
 </h1>
 
-Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only updated on a semi-regular basis; don't expect for everything to work OOTB. I didn't include all configs since I kept most applications somewhat close to default---only the major changes (e.g. Yazi's icons being fully recolored) are included.
+Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only updated on a semi-regular basis; don't expect for everything to work OOTB. I didn't include all configs since I kept most applications somewhat close to default—my rule of thumb is to only add files that would take >1 hr (or annoying trial-and-error) to replicate from scratch.
 ## Application List
 **Base Software**
 - *OS*: Arch Linux
