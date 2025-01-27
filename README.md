@@ -1,7 +1,7 @@
 <h1 align="center">
-  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Plain%20Rice.png" width="80%">
+  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Plain%20Rice.png" width="60%">
   <br>
-  IcyDots: Nord-Themed Dotfiles for Arch
+  Minimal Nord-Themed Dotfiles for Arch
   <br>
   <img src="https://img.shields.io/github/commit-activity/y/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac" alt="Commit Frequency">
   <img src="https://img.shields.io/github/license/Hudson-Liu/Dotfiles-Desktop?style=for-the-badge&labelColor=%234c566a&color=%235e81ac" alt="License">
