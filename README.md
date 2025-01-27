@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Nord%20Rice.png" width="80%">
+  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Plain%20Rice.png" width="80%">
   <br>
   Hudson's Custom Dotfiles
   <br>

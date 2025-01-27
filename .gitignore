@@ -11,11 +11,12 @@
 !/polybar/
 !/zathura/
 !mimeapps.list
-#!/mpd/
-#!/ncmpcpp/
 !/bspwm/
 !/sxhkd/
 !.vimrc
 !/picom/
 !/yazi/
 !/Extras/
+
+!Plain Rice (Blank).png
+!Plain Rice.png
