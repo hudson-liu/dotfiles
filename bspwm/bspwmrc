@@ -13,16 +13,27 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 # feh --bg-fill /home/jimmy/Pictures/Wallpapers/scaledextend.png --bg-fill /home/jimmy/Pictures/Wallpapers/ricer.jpg &
 # feh --bg-fill /home/j/Pictures/Wallpapers/"Tokyo Night.jpg" &
-#feh --bg-fill /home/j/Pictures/Wallpapers/"waves.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"waves.png" &
 # feh --bg-fill /home/j/Pictures/Wallpapers/"nord4.png" &
-#feh --bg-fill /home/j/Pictures/Wallpapers/"nord5.png" &
+feh --bg-fill /home/j/Pictures/Wallpapers/"nord5.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord6.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord7.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord8.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord9.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord10.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord11.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord12.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord13.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"nord14.png" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"norde.jpeg" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"image (1).png" &
 # feh --bg-fill /home/j/Pictures/Wallpapers/"solid-color-image_3.png" &
 # feh --bg-fill /home/j/Pictures/Wallpapers/"Slide2.jpg" &
-#feh --bg-fill /home/j/Pictures/Wallpapers/"minimali_nordic.jpg" &
-#feh --bg-fill /home/j/Pictures/Wallpapers/"Presentation 2 (1)-2.png" & 
-#feh --bg-fill /home/j/Pictures/Wallpapers/"Presentation 2 (1)-3.png" & 
+# feh --bg-fill /home/j/Pictures/Wallpapers/"minimali_nordic.jpg" &
+# feh --bg-fill /home/j/Pictures/Wallpapers/"Presentation 2 (1)-2.png" & 
+# feh --bg-fill /home/j/Pictures/Wallpapers/"Presentation 2 (1)-3.png" & 
 # feh --bg-fill /home/j/Pictures/Wallpapers/"output3.png" & 
-feh --bg-tile /home/j/Pictures/Wallpapers/"weeee.png" & 
+# feh --bg-tile /home/j/Pictures/Wallpapers/"weeee.png" & 
 
 # bash /home/jimmy/.config/polybar/launch.sh --grayblocks &
 bash /home/j/.config/polybar/launch.sh &
@@ -30,9 +41,10 @@ bash /home/j/.config/polybar/launch.sh &
 # bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor -d MAIN SCHL SPOT DISC AIML MISC
 
-bspc config border_width         2
+bspc config border_width         3
+# bspc config border_width         4
 # bspc config border_width         0
-bspc config window_gap          25
+bspc config window_gap          20
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
@@ -46,13 +58,25 @@ bspc config gapless_monocle      true
 # bspc config active_border_color \#a6accd
 # bspc config normal_border_color \#a6accd
 
+# bspc config focused_border_color \#2e3440
+# bspc config active_border_color  \#2e3440 
+# bspc config normal_border_color  \#2e3440 
+
+bspc config focused_border_color \#3b4252
+bspc config active_border_color  \#3b4252 
+bspc config normal_border_color  \#3b4252 
+
+# bspc config focused_border_color \#292f3a
+# bspc config active_border_color  \#292f3a 
+# bspc config normal_border_color  \#292f3a 
+
 # bspc config focused_border_color \#5E81AC
 # bspc config active_border_color \#5E81AC
 # bspc config normal_border_color \#5E81AC
 
-bspc config focused_border_color \#2e3440
-bspc config active_border_color  \#2e3440 
-bspc config normal_border_color  \#2e3440 
+# bspc config focused_border_color \#81a1c1
+# bspc config active_border_color  \#81a1c1 
+# bspc config normal_border_color  \#81a1c1 
 
 
 bspc rule -a zoom state=floating

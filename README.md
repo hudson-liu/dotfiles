@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Plain%20Rice.png" width="60%">
+  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Configuration-Setup.png" width="60%">
   <br>
   Minimal Nord-Themed Dotfiles for Arch
   <br>
@@ -49,7 +49,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 
 | Empty Layout | Floating Layout | Tiled Layout |
 |--------------|-----------------|--------------|
-| ![Empty](Plain-Rice-Blank.png) | ![Floating](Plain-Rice-Floating.png) | ![Tiled](Plain-Rice-Casual.png) |
+| ![Empty](Empty-Screen.png) | ![Floating](Floating-Window-Demo.png) | ![Tiled](Notetaking.png) |
 
 ## Inspiration
 - [Manas140's Dotfiles](https://github.com/Manas140/dotfiles)
