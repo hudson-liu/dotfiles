@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/Configuration-Setup.png" width="60%">
+  <img src="https://github.com/Hudson-Liu/Dotfiles-Desktop/blob/main/_Rice-Pics/Configuration-Setup.png" width="60%">
   <br>
   Minimal Nord-Themed Dotfiles for Arch
   <br>
@@ -11,18 +11,19 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 ## Application List
 **Base Software**
 - *OS*: Arch Linux
+    - *AUR Helper*: Yay
+    - *Networking*: NetworkManager
+    - *Sound Daemon*: PipeWire
 - *Display Server*: X11/Xorg
-- *Display Manager*: LightDM
+    - *Display Manager*: LightDM - GTK Greeter
 - *Window Manager*: BSPWM + SXHKD (and FlashFocus)
-- *Application Launcher*: Rofi (as dmenu)
-- *Compositor*: Picom
-- *Networking*: NetworkManager
-- *AUR Helper*: Yay
-- *Terminal*: Kitty
-- *Status Bar*: Polybar
-- *Sound Daemon*: PipeWire
+    - *Application Launcher*: Rofi (as dmenu)
+    - *Compositor*: Picom
+    - *Status Bar*: Polybar
+    - *Terminal*: Kitty
 
 **Other Applications**
+- *Fetch Utility*: Catnap
 - *Sound Front-End*: Pavucontrol
 - *Disk Management*: GParted
 - *Image Viewer*: Feh
@@ -31,7 +32,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *PDF Viewer*: Zathura w/ MuPDF
 - *File Explorer:*: Thunar + Thunar-Archive-Plugin + Thunar-Volman
 - *Archive Management*: XArchiver + unzip + 7z
-- *Video Player*:  mpv
+- *Video Player*: mpv
 - *Process Monitor*: htop (for cpu) + nvtop (for gpu)
 - *Bluetooth*: Blueberry
 - *GTK Theming*: Lxappearance
@@ -41,7 +42,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *Source Control*: Git
 
 ## Theming
-  - GTK Theme: Nord Theme
+  - GTK Theme: Nordic
   - Cursor: BreezeX
   - Font: FiraCode Nerd Font
   - Unicode & Emojis: Noto Color Emoji
@@ -49,7 +50,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 
 | Empty Layout | Floating Layout | Tiled Layout |
 |--------------|-----------------|--------------|
-| ![Empty](Empty-Screen.png) | ![Floating](Floating-Window-Demo.png) | ![Tiled](Notetaking.png) |
+| ![Empty](./_Rice-Pics/Empty-Screen.png) | ![Floating](./_Rice-Pics/Floating-Window-Demo.png) | ![Tiled](./_Rice-Pics/Notetaking.png) |
 
 ## Inspiration
 - [Manas140's Dotfiles](https://github.com/Manas140/dotfiles)

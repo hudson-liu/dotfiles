@@ -5,9 +5,9 @@
 !.gitignore
 !README.md
 !/gtk-3.0/
-!/htop/
 !/kitty/
 !/nvim/
+!/rofi/
 !/polybar/
 !/zathura/
 !mimeapps.list
