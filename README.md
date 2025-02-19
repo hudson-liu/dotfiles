@@ -10,36 +10,36 @@
 Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only updated on a semi-regular basis; don't expect for everything to work OOTB. I didn't include all configs since I kept most applications somewhat close to default—my rule of thumb is to only add files that would take >1 hr (or annoying trial-and-error) to replicate from scratch.
 ## Application List
 **Base Software**
-- *OS*: Arch Linux
-    - *AUR Helper*: Yay
-    - *Networking*: NetworkManager
-    - *Sound Daemon*: PipeWire
-- *Display Server*: X11/Xorg
-    - *Display Manager*: LightDM - GTK Greeter
-- *Window Manager*: BSPWM + SXHKD (and FlashFocus)
-    - *Application Launcher*: Rofi (as dmenu)
-    - *Compositor*: Picom
-    - *Status Bar*: Polybar
-    - *Terminal*: Kitty
+- *OS*: `Arch Linux`
+    - *AUR Helper*: `Yay`
+    - *Networking*: `NetworkManager`
+    - *Sound Daemon*: `PipeWire`
+- *Display Server*: `X11`/`Xorg`
+    - *Display Manager*: `LightDM` - GTK Greeter
+- *Window Manager*: `BSPWM` + `SXHKD` (and `FlashFocus`)
+    - *Application Launcher*: `Rofi` (as dmenu)
+    - *Compositor*: `Picom`
+    - *Status Bar*: `Polybar`
+    - *Terminal*: `Kitty`
 
 **Other Applications**
-- *Fetch Utility*: Catnap
-- *Sound Front-End*: Pavucontrol
-- *Disk Management*: GParted
-- *Image Viewer*: Feh
-- *IDE/Notes*: Neovim (NvChad)
-- *TeX Distro*: TeX Live (pdfTeX + LaTeX)
-- *PDF Viewer*: Zathura w/ MuPDF
-- *File Explorer:*: Thunar + Thunar-Archive-Plugin + Thunar-Volman
-- *Archive Management*: XArchiver + unzip + 7z
-- *Video Player*: mpv
-- *Process Monitor*: htop (for cpu) + nvtop (for gpu)
-- *Bluetooth*: Blueberry
-- *GTK Theming*: Lxappearance
-- *Keyboard Backlight*: OpenRGB
-- *Screenshot Utility*: Scrot
-- *Clipboard CLI Control*: Xclip
-- *Source Control*: Git
+- *Fetch Utility*: `Catnap`
+- *Sound Front-End*: `Pavucontrol`
+- *Disk Management*: `GParted`
+- *Image Viewer*: `Feh`
+- *IDE/Notes*: `Neovim` (`NvChad`)
+- *TeX Distro*: `TeX Live` (`pdfTeX` + `LaTeX`)
+- *PDF Viewer*: `Zathura` w/ `MuPDF`
+- *File Explorer*: `Thunar` + `Thunar-Archive-Plugin` + `Thunar-Volman`
+- *Archive Management*: `XArchiver` + `unzip`/`7z`
+- *Video Player*: `mpv`
+- *Process Monitor*: `htop` (for cpu) + `nvtop` (for gpu)
+- *Bluetooth*: `Blueberry`
+- *GTK Theming*: `Lxappearance`
+- *Keyboard Backlight*: `OpenRGB`
+- *Screenshot Utility*: `Scrot`
+- *Clipboard CLI Control*: `Xclip`
+- *Source Control*: `Git`
 
 ## Theming
   - GTK Theme: Nordic
