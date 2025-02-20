@@ -40,6 +40,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *Screenshot Utility*: `Scrot`
 - *Clipboard CLI Control*: `Xclip`
 - *Source Control*: `Git`
+- *Music Player*: `Spotify` w/ `Spicetify` (`Sleek` Theme)
 
 ## Theming
   - GTK Theme: Nordic
