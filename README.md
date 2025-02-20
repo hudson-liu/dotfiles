@@ -39,7 +39,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *Keyboard Backlight*: `OpenRGB`
 - *Screenshot Utility*: `Scrot`
 - *Clipboard CLI Control*: `Xclip`
-- *Source Control*: `Git`
+- *Source Control*: `Git` & `Lazygit`
 - *Music Player*: `Spotify` w/ `Spicetify` (`Sleek` Theme)
 
 ## Theming
