@@ -16,7 +16,7 @@ xinput set-prop "Apple Inc. Magic Trackpad 2" 300 0.5 0 0
 feh --bg-fill ~/Pictures/Wallpapers/"Nord Mountains.png" &
 
 # -----[BSPWM Configuration]-----
-bspc monitor -d MAIN SCHL SPOT DISC AIML MISC
+bspc monitor -d MAIN SCHL AIML MISC SPOT DISC RECS
 bspc config border_width         3
 bspc config window_gap           20
 bspc config split_ratio          0.5
