@@ -1,8 +1,9 @@
+# ------[Recolor Keybind]------
 set recolor true
 map <C-i> recolor
 
-# Base16 Nord
-# Author: arcticicestudio
+# ------[Color Theme, Base16 Nord]------
+# Author: "arcticicestudio"
 
 set default-bg                  "#2E3440"
 set default-fg                  "#3B4252"
