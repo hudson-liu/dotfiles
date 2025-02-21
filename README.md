@@ -53,6 +53,9 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 |--------------|-----------------|--------------|
 | ![Empty](./_Rice-Pics/Empty-Screen.png) | ![Floating](./_Rice-Pics/Floating-Window-Demo.png) | ![Tiled](./_Rice-Pics/Notetaking.png) |
 
+**Showcase Picture:**
+![Picture of rice for showcases.](https://github.com/Hudson-Liu/Dotfiles/blob/main/_Rice-Pics/Collection.png)
+
 ## Inspiration
 - [Manas140's Dotfiles](https://github.com/Manas140/dotfiles)
 - [Amogh's Dotfiles](https://github.com/amogh-w/dotfiles)
