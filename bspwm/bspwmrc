@@ -1,8 +1,14 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+# ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗  ██████╗
+# ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗██╔════╝
+# ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝██║     
+# ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗██║     
+# ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██║  ██║╚██████╗
+# ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 
 # -----[Autostart Applications]-----
+pgrep -x sxhkd > /dev/null || sxhkd &
 picom & # Compositor
 flashfocus & # Shows active windows
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # Manages GUI authenatication
