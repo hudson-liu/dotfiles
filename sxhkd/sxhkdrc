@@ -2,6 +2,10 @@
 super + s
 	scrot -s ~/Pictures/Screenshots/"%b %d, %r.png" -e 'xclip -selection clipboard -t image/png -i "$f"'
 
+# -----[Controls]-----
+XF86MonBrightness{Up,Down}  
+    brightnessctl s 9600{+,-}  
+
 # -----[Tabs (Tabbed)]-----
 # Add current window to tabbed window
 ctrl + alt + {Left,Down,Up,Right}

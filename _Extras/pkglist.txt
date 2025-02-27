@@ -1,4 +1,5 @@
 blueberry
+brightnessctl
 drawio-desktop
 eza
 feh
@@ -51,6 +52,7 @@ thunar-archive-plugin
 thunar-volman
 ttf-firacode-nerd
 unzip
+xclip
 xdo
 xdotool
 xorg-server
