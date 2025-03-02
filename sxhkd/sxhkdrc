@@ -2,6 +2,10 @@
 super + s
 	scrot -s ~/Pictures/Screenshots/"%b %d, %r.png" -e 'xclip -selection clipboard -t image/png -i "$f"'
 
+# -----[Custom Startup Script]-----
+super + shift + y
+    bash ~/.config/_Extras/desk.sh
+
 # -----[Controls]-----
 XF86MonBrightness{Up,Down}  
     brightnessctl s 9600{+,-}  
@@ -60,6 +64,9 @@ super + shift + space
     else \
         bspc node focused -t tiled; \
     fi
+# Move floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # -----[State/Flags]-----
 # Set window state
