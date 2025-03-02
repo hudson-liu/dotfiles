@@ -11,5 +11,8 @@ alias venvs='source ~/Documents/Environments/env_runner.sh' # Venv selector for 
 # ------[Prompt]------
 PS1='\[\e[1m\]hudson\[\e[0m\]-\[\e[1;94m\]\h\[\e[0m\] \[\e[1;32m\][\W]\[\e[0m\]: '
 
+# -----[Change GOPATH]-----
+export GOPATH=$HOME/.go_workspace
+
 # ------[Show Fetch]-----
 catnap
