@@ -7,12 +7,6 @@ flashfocus & # Shows active windows
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # Manages GUI authenatication
 bash ~/.config/polybar/launch.sh & # Status Bar
 
-# -----[Xinput Configuration]-----
-DEVICE_NAME="VEN_2C2F:00 2C2F:0025 Touchpad"
-xinput --set-prop "$DEVICE_NAME" "libinput Accel Custom Motion Points" 0, 1, 3.5, 6.5, 10
-xinput --set-prop "$DEVICE_NAME" "libinput Accel Custom Motion Step" 3
-xinput --set-prop "$DEVICE_NAME" "libinput Scrolling Pixel Distance" 50
-
 # -----[Wallpaper]-----
 feh --bg-fill ~/Pictures/Wallpapers/"Nord-Mountains.png" &
 

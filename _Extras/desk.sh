@@ -20,22 +20,12 @@ sleep 1
 # -----[Workspace Alpha]-----
 switch_workspace 1
 
-launch_background "google-chrome-stable --profile-directory='Default'" 2
-xdotool key "Super_L+Ctrl+l"
-sleep 0.3
-
-launch_background "kitty" 0.5
-xdotool type "nvim ~/Documents/Notes/Personal/workspaces.md"
-sleep 0.5
-xdotool key Return
-sleep 0.5
-xdotool key "Ctrl+n"
-sleep 0.2
+launch_background "google-chrome-stable --profile-directory='Default'" 3
 
 # -----[Workspace Beta]-----
 switch_workspace 2
 
-launch_background "google-chrome-stable --profile-directory='Profile 1'" 2
+launch_background "google-chrome-stable --profile-directory='Profile 1'" 3
 
 # -----[Workspace Epsilon]-----
 switch_workspace 5
@@ -50,11 +40,13 @@ sleep 0.1
 bspc node -z left -250 0
 sleep 0.1
 bspc node -z top 0 -420
-sleep 0.1
-xdotool type "clx"
-sleep 0.1
+sleep 0.2
+xdotool type "nvim ~/Documents/Notes/Personal/t-*.md"
+sleep 0.5
 xdotool key Return
-sleep 0.3
+sleep 0.5
+xdotool key "Ctrl+n"
+sleep 0.2
 
 launch_background "kitty" 0.3
 xdotool key "Super_L+Shift+space"
@@ -82,6 +74,6 @@ sleep 0.1
 switch_workspace 6
 launch_background "spotify" 2
 
-# -----[Workspace Eta]---
-switch_workspace 7
-launch_background "vesktop" 2
+# # -----[Workspace Eta]---
+# switch_workspace 7
+# launch_background "vesktop" 2
