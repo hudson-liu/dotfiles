@@ -30,12 +30,12 @@ M.ui = {
 }
 
 M.base46 = {
-	theme = "nord",
+	theme = "onenord",
 
 	hl_override = {
-	 	Comment = { italic = true },
-	 	["@comment"] = { italic = true },
-	 },
+		Comment = { italic = true },
+		["@comment"] = { italic = true },
+	},
 }
 
 M.nvdash = {

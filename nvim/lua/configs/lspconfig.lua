@@ -16,6 +16,18 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- Python
+lspconfig.pyright.setup{
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "off"
+      }
+    }
+  }
+}
+
+
 -- configuring single server, example: typescript
 -- lspconfig.tsserver.setup {
 --   on_attach = nvlsp.on_attach,

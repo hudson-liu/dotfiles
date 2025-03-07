@@ -1,4 +1,4 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 vim.g.table_mode_corner = "|"
 vim.g.show_words_in_line = true
@@ -12,13 +12,13 @@ if vim.g.neovide then
   vim.opt.linespace = -1
 end
 
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = {"norg", "lua"},
---   callback = function()
---     vim.opt.tabstop = 2
---     vim.opt.shiftwidth = 2
---   end
--- })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = {"norg", "lua"},
+  callback = function()
+    vim.opt.tabstop = 2
+    vim.opt.shiftwidth = 2
+  end
+})
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
