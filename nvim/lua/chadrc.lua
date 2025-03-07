@@ -7,7 +7,7 @@ local M = {}
 M.ui = {
   statusline = {
     -- order = { "mode", "file", "git", "word_count", "%=", "lsp_msg", "%=", "lsp", "cwd" },
-    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "lsp", "cwd" },
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "word_count", "lsp", "cwd" },
     theme = "minimal",
     -- seperator_style = "block", -- default, round, block, arrow
     modules = {
