@@ -5,7 +5,6 @@ M.ui = {
   telescope = { style = "bordered" },
   statusline = {
     order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "word_count", "lsp", "cwd" },
-    theme = "default",
     modules = {
       word_count = function()
         local line = vim.api.nvim_get_current_line()
