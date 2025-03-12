@@ -1,13 +1,12 @@
--- load defaults i.e lua_lsp
+-- Load Default Plugins
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
--- EXAMPLE
 local servers = { "html", "cssls", "pyright", "texlab" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
--- lsps with default config
+-- LSPs w/ Default Config
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = nvlsp.on_attach,
