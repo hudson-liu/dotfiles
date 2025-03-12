@@ -1,7 +1,6 @@
 require "nvchad.options"
 
 local o = vim.o
-o.cursorlineopt = "both"
 o.relativenumber = true
 o.autochdir = true
 o.expandtab = true

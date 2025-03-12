@@ -4,7 +4,7 @@ local M = {}
 M.ui = {
   statusline = {
     order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "word_count", "lsp", "cwd" },
-    theme = "minimal",
+    theme = "default",
     modules = {
       word_count = function()
         local line = vim.api.nvim_get_current_line()
@@ -25,7 +25,7 @@ M.ui = {
 }
 
 M.base46 = {
-  theme = "onenord",
+  theme = "nord",
 
   hl_override = {
     Comment = { italic = true },
@@ -33,20 +33,27 @@ M.base46 = {
   },
 
   changed_themes = {
-    onenord = {
+    nord = {
       base_16 = {
         base00 = "#2E3440",
+        base01 = "#3B4252",
+        base02 = "#434C5E",
+        base03 = "#4C566A",
+        base04 = "#D8DEE9",
+        base05 = "#bfc5d0",
+        base06 = "#ECEFF4",
+        base07 = "#8FBCBB",
         base08 = "#81A1C1",
         base09 = "#88C0D0",
+        base0A = "#EBCB8B",
+        base0B = "#A3BE8C",
         base0C = "#88C0D0",
         base0D = "#5E81AC",
         base0E = "#8FBCBB",
-        base0F = "#e5e9f0",
+        base0F = "#81A1C1",
       },
       base_30 = {
-        darker_black = "#2A303C",
-        black = "#2E3440",
-        black2 = "#343a46",
+        statusline_bg = "#2E3440",
       },
     },
   },
