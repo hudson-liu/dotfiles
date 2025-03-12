@@ -2,9 +2,9 @@ vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 vim.g.table_mode_corner = "|"
 vim.g.show_words_in_line = true
-vim.g.vimtex_compiler_method = 'latexmk'
+vim.g.vimtex_compiler_method = "latexmk"
 vim.g.vimtex_compiler_latexmk = {
-  build_dir = '/home/j/Documents/Notes/LaTeX_Build/',
+  build_dir = "/home/j/Documents/Notes/LaTeX_Build/",
 }
 
 if vim.g.neovide then
@@ -13,11 +13,11 @@ if vim.g.neovide then
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = {"norg", "lua"},
+  pattern = { "norg", "lua" },
   callback = function()
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
-  end
+  end,
 })
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"

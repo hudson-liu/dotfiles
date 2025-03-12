@@ -1,4 +1,4 @@
--- This file needs to have same structure as nvconfig.lua 
+-- This file needs to have same structure as nvconfig.lua
 -- https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua
 
 ---@type ChadrcConfig
@@ -24,22 +24,33 @@ M.ui = {
         else
           return ""
         end
-      end
-    }
-  }
+      end,
+    },
+  },
 }
 
 M.base46 = {
-	theme = "onenord",
+  theme = "onenord",
 
-	hl_override = {
-		Comment = { italic = true },
-		["@comment"] = { italic = true },
-	},
+  hl_override = {
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
+  },
+
+  changed_themes = {
+    onenord = {
+      base_16 = {
+        base00 = "#2E3440",
+      },
+      base_30 = {
+        darker_black = "#2A303C",
+      },
+    },
+  },
 }
 
 M.nvdash = {
-  load_on_startup = true
+  load_on_startup = true,
 }
 
 return M

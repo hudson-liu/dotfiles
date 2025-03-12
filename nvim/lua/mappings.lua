@@ -7,15 +7,14 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
-map ("n", "<leader>co", "<cmd> VimtexCompile <cr>")
-map ("n", "<leader>cv", "<cmd> VimtexView <cr>")
-map ("n", "<leader>cq", "<cmd> VimtexStop <cr>")
+map("n", "<leader>co", "<cmd> VimtexCompile <cr>")
+map("n", "<leader>cv", "<cmd> VimtexView <cr>")
+map("n", "<leader>cq", "<cmd> VimtexStop <cr>")
 
-map ("v", "<leader>dd", "<Plug>SlimeRegionSend")
-map ("n", "<leader>dd", "<Plug>SlimeParagraphSend")
-map ("n", "<leader>dc", "<cmd> SlimeConfig <cr>")
+map("v", "<leader>dd", "<Plug>SlimeRegionSend")
+map("n", "<leader>dd", "<Plug>SlimeParagraphSend")
+map("n", "<leader>dc", "<cmd> SlimeConfig <cr>")
 
-map ("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+map("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
-map ("n", "<leader>cu", "<cmd> ShowkeysToggle <cr>")
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "<leader>cu", "<cmd> ShowkeysToggle <cr>")

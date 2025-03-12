@@ -1,11 +1,12 @@
 return {
+  -- Formatter
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
+  -- LSP Handling
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -13,18 +14,31 @@ return {
     end,
   },
 
+  -- Language Parser & Improved Syntax Highlighting
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  	  ensure_installed = {
-  	    "vim", "lua", "vimdoc",
-        "html", "css", "python", "csv",
-        "cpp", "c", "gitignore",
-        "toml", "yaml", "java", "json", "markdown"
-  	  },
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "python",
+        "csv",
+        "cpp",
+        "c",
+        "gitignore",
+        "toml",
+        "yaml",
+        "java",
+        "json",
+        "markdown",
+      },
+    },
   },
 
+  -- LaTeX Compatibility w/ Vim
   {
     "lervag/vimtex",
     ft = { "tex" },
@@ -39,6 +53,7 @@ return {
     end,
   },
 
+  -- Interactive Jupyter-like Sessions in Neovim
   {
     "jpalardy/vim-slime",
     lazy = false,
@@ -46,15 +61,16 @@ return {
       vim.g.slime_target = "kitty"
       vim.g.slime_no_mappings = 1
       vim.g.slime_bracketed_paste = 1
-    end
+    end,
   },
 
+  -- File Summary
   {
     "stevearc/aerial.nvim",
     lazy = false,
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
-      "nvim-tree/nvim-web-devicons"
+      "nvim-tree/nvim-web-devicons",
     },
     opts = {
       on_attach = function(bufnr)
@@ -63,10 +79,11 @@ return {
       end,
       layout = {
         width = 20,
-      }
-    }
+      },
+    },
   },
 
+  -- Breadcrumbs on Header
   {
     "utilyre/barbecue.nvim",
     event = "LspAttach",
@@ -76,40 +93,46 @@ return {
       "SmiteshP/nvim-navic",
       "nvim-tree/nvim-web-devicons", -- optional dependency
     },
-    opts = {}
+    opts = {},
   },
 
+  -- Java Language Support
   {
-    'mfussenegger/nvim-jdtls',
-    lazy = false
+    "mfussenegger/nvim-jdtls",
+    lazy = false,
   },
 
+  -- Built-In Keypress Display
   {
     "nvchad/showkeys",
-    cmd = "ShowkeysToggle"
+    cmd = "ShowkeysToggle",
   },
 
+  -- Built-In Timer
   {
     "nvchad/timerly",
-    cmd = "TimerlyToggle"
+    cmd = "TimerlyToggle",
   },
 
+  -- Smooth Scrolling
   {
     "karb94/neoscroll.nvim",
     lazy = false,
-    config = function ()
-      require("neoscroll").setup({})
-    end
+    config = function()
+      require("neoscroll").setup {}
+    end,
   },
 
+  -- Built-In Typing Test
   {
     "nvchad/typr",
-    lazy = false
+    lazy = false,
   },
 
+  -- Imrproved Markdown Headings
   {
     "lukas-reineke/headlines.nvim",
     lazy = false,
-    config = true
-  }
+    config = true,
+  },
 }
