@@ -1,9 +1,19 @@
-**This repo is supposed to used as config by NvChad users!**
+## Customized NvChad Config
+Onenord Color Theme Variant:
+base00 = "#2E3440",
+base01 = "#3B4252",
+base02 = "#434C5E",
+base03 = "#4C566A",
+base04 = "#566074",
+base05 = "#bfc5d0",
+base06 = "#c7cdd8",
+base07 = "#ced4df",
+base08 = "#81A1C1",
+base09 = "#88C0D0",
+base0A = "#EBCB8B",
+base0B = "#A3BE8C",
+base0C = "#88C0D0",
+base0D = "#5E81AC",
+base0E = "#8FBCBB",
+base0F = "#e5e9f0",
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
-
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!

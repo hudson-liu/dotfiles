@@ -36,6 +36,12 @@ M.base46 = {
     onenord = {
       base_16 = {
         base00 = "#2E3440",
+        base08 = "#81A1C1",
+        base09 = "#88C0D0",
+        base0C = "#88C0D0",
+        base0D = "#5E81AC",
+        base0E = "#8FBCBB",
+        base0F = "#e5e9f0",
       },
       base_30 = {
         darker_black = "#2A303C",
