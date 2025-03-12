@@ -2,6 +2,7 @@
 local M = {}
 
 M.ui = {
+  telescope = { style = "bordered" },
   statusline = {
     order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "word_count", "lsp", "cwd" },
     theme = "default",
