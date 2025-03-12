@@ -45,6 +45,8 @@ M.base46 = {
       },
       base_30 = {
         darker_black = "#2A303C",
+        black = "#2E3440",
+        black2 = "#343a46",
       },
     },
   },

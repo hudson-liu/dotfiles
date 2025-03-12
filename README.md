@@ -45,7 +45,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 ## Theming
   - GTK Theme: Nordic
   - Cursor: BreezeX
-  - Font: Hack Nerd Font
+  - Font: FiraCode Nerd Font (& JetBrains Mono for italics)
   - Unicode & Emojis: Noto Color Emoji
 ## Screenshots
 
