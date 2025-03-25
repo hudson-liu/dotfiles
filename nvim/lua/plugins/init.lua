@@ -128,11 +128,4 @@ return {
     "nvchad/typr",
     lazy = false,
   },
-
-  -- Imrproved Markdown Headings
-  {
-    "lukas-reineke/headlines.nvim",
-    lazy = false,
-    config = true,
-  },
 }

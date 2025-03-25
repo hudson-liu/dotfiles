@@ -8,8 +8,9 @@ flashfocus & # Shows active windows
 bash ~/.config/polybar/launch.sh & # Status Bar
 
 # -----[Xinput Configuration]-----
-xinput --set-prop 'Apple Inc. Magic Trackpad 2' 'libinput Accel Speed' -1.0
-xinput --set-prop 'Apple Inc. Magic Trackpad 2' 'libinput Accel Profile Enabled' 1, 0, 0
+DEVICE_NAME="Apple Inc. Magic Trackpad 2"
+xinput --set-prop "$DEVICE_NAME" "libinput Accel Speed" -0.15
+xinput --set-prop "$DEVICE_NAME" "libinput Accel Profile Enabled" 1, 0, 0
 
 # -----[Wallpaper]-----
 feh --bg-fill ~/Pictures/Wallpapers/"Nord-Mountains.png" &
