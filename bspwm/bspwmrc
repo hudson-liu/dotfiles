@@ -6,6 +6,7 @@ picom & # Compositor
 flashfocus & # Shows active windows
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # Manages GUI authenatication
 bash ~/.config/polybar/launch.sh & # Status Bar
+xautolock -time 5 -locker "systemctl suspend" -detectsleep & # Autolock laptop
 
 # -----[Xinput Configuration]-----
 DEVICE_NAME="Apple Inc. Magic Trackpad 2"
