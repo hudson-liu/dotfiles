@@ -1,6 +1,8 @@
 # -----[Screenshot]-----
 super + s
-	scrot -s ~/Pictures/Screenshots/"%b %d, %r.png" -e 'xclip -selection clipboard -t image/png -i "$f"'
+	maim -s \
+    | tee "$HOME/Pictures/Screenshots/$(date +'%b %d, %r').png" \ 
+    | xclip -selection clipboard -t image/png
 
 # -----[Custom Startup Script]-----
 super + shift + y
