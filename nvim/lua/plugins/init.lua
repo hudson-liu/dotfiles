@@ -128,4 +128,14 @@ return {
     "nvchad/typr",
     lazy = false,
   },
+
+  -- Image Support
+  {
+    "3rd/image.nvim",
+    build = false,
+    lazy = false,
+    opts = {
+      processor = "magick_cli",
+    },
+  },
 }

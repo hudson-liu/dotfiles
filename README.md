@@ -41,6 +41,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *Clipboard CLI Control*: `Xclip`
 - *Source Control*: `Git` & `Lazygit`
 - *Music Player*: `Spotify` w/ `Spicetify` (`Sleek` Theme)
+- *Notification Manager*: `Dunst`
 
 ## Theming
   - GTK Theme: Nordic
