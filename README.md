@@ -37,7 +37,7 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *Bluetooth*: `Blueberry`
 - *GTK Theming*: `Lxappearance`
 - *Keyboard Backlight*: `OpenRGB`
-- *Screenshot Utility*: `Scrot`
+- *Screenshot Utility*: `Maim`
 - *Clipboard CLI Control*: `Xclip`
 - *Source Control*: `Git` & `Lazygit`
 - *Music Player*: `Spotify` w/ `Spicetify` (`Sleek` Theme)
