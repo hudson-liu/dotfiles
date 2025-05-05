@@ -7,9 +7,10 @@ flashfocus & # Shows active windows
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # Manages GUI authenatication
 bash ~/.config/polybar/launch.sh & # Status Bar
 xautolock -time 5 -locker "systemctl suspend" -detectsleep & # Autolock laptop
+fcitx5 &
 
 # -----[Xinput Configuration]-----
-DEVICE_NAME="Apple Inc. Magic Trackpad 2"
+DEVICE_NAME="Apple Inc. Magic Trackpad"
 xinput --set-prop "$DEVICE_NAME" "libinput Accel Speed" -0.15
 xinput --set-prop "$DEVICE_NAME" "libinput Accel Profile Enabled" 1, 0, 0
 
@@ -38,6 +39,6 @@ bspc config normal_border_color  "$COLOR"
 # -----[Window Rules]-----
 bspc rule -a zoom state=floating
 bspc rule -a feh state=floating rectangle=1000x500+0+0 center=true
-bspc rule -a chrome rectangle=1000x500+0+0 center=true
+bspc rule -a Google-chrome rectangle=800x1000+0+0 center=true
 bspc rule -a Thunar rectangle=850x450+0+0 center=true
 bspc rule -a kitty rectangle=500x370+0+0 center=true

@@ -33,10 +33,9 @@ Dotfiles for a fairly minimal Nord-themed Arch Linux setup. This repo is only up
 - *File Explorer*: `Thunar` + `Thunar-Archive-Plugin` + `Thunar-Volman`
 - *Archive Management*: `XArchiver` + `unzip`/`7z`
 - *Video Player*: `mpv`
-- *Process Monitor*: `htop` (for cpu) + `nvtop` (for gpu)
+- *Process Monitor*: `htop` (for cpu)
 - *Bluetooth*: `Blueberry`
 - *GTK Theming*: `Lxappearance`
-- *Keyboard Backlight*: `OpenRGB`
 - *Screenshot Utility*: `Maim`
 - *Clipboard CLI Control*: `Xclip`
 - *Source Control*: `Git` & `Lazygit`

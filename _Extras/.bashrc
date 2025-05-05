@@ -7,6 +7,7 @@ alias grep='grep --color=auto' # Prettier grep
 alias adam='setxkbmap -option caps:swapescape' # For normal keyboard use
 alias ramiel='setxkbmap -option' # For split ergomech usage
 alias venvs='source ~/Documents/Environments/env_runner.sh' # Venv selector for Python
+alias notifs='dunstctl set-paused toggle && dunstctl is-paused'
 
 # ------[Prompt]------
 PS1='\[\e[1m\]hudson\[\e[0m\]-\[\e[1;94m\]\h\[\e[0m\] \[\e[1;32m\][\W]\[\e[0m\]: '
@@ -16,3 +17,4 @@ export GOPATH=$HOME/.go_workspace
 
 # ------[Show Fetch]-----
 catnap
+
