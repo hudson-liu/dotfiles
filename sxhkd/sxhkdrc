@@ -39,6 +39,9 @@ super + z
 # Launch terminal emulator
 super + Return
 	kitty
+# Launch thunar's bookshelf
+super + shift + Return
+    thunar ~/Documents/Bookshelf/
 # Launch program
 super + d
 	rofi -show drun

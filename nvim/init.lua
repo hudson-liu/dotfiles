@@ -13,7 +13,7 @@ if vim.g.neovide then
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "norg", "lua" },
+  pattern = { "norg", "lua", "html", "css" },
   callback = function()
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
