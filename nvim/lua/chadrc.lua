@@ -30,6 +30,13 @@ M.base46 = {
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
+    NvimTreeRootFolder = { fg = "#8fbcbb", bg = "NONE", bold = true },
+    GitSignsAdd = { fg = "#4C566A", bg = "NONE", blend = 0 },
+    GitSignsChange = { fg = "#4C566A", bg = "NONE", blend = 0 },
+    GitSignsDelete = { fg = "#4C566A", bg = "NONE", blend = 0 },
+    NvimTreeGitNew = { fg = "#eceff4", bg = "NONE" },
+    NvimTreeGitDirty = { fg = "#eceff4", bg = "NONE" },
+    NvimTreeGitDeleted = { fg = "#eceff4", bg = "NONE" },
   },
 
   changed_themes = {
