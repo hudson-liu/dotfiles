@@ -13,6 +13,8 @@ super + shift + s
 # -----[Custom Startup Script]-----
 super + shift + y
     bash ~/.config/_Extras/desk.sh
+super + shift n
+    bash ~/.config/_Extras/neovim.sh
 
 # -----[Controls]-----
 XF86MonBrightness{Up,Down}  
