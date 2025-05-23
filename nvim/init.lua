@@ -59,3 +59,10 @@ vim.api.nvim_create_autocmd("VimEnter", {
     vim.cmd "ShowkeysToggle"
   end,
 })
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = "#4c566a", bg = "NONE" })
+    vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#4c566a", bg = "NONE" })
+    vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = "#8fbcbb", bg = "NONE" })
+  end,
+})
