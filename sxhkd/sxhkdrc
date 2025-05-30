@@ -13,8 +13,6 @@ super + shift + s
 # -----[Custom Startup Script]-----
 super + shift + y
     bash ~/.config/_Extras/desk.sh
-super + shift n
-    bash ~/.config/_Extras/neovim.sh
 
 # -----[Controls]-----
 XF86MonBrightness{Up,Down}  
@@ -42,11 +40,17 @@ super + z
 super + Return
 	kitty
 # Launch thunar's bookshelf
-super + shift + Return
-    thunar ~/Documents/
+super + q
+    thunar
 # Launch program
 super + d
 	rofi -show drun
+# Launch neovim
+super + shift + n
+    kitty & bash ~/.config/_Extras/neovim.sh &
+# Launch chrome
+super + a
+    google-chrome-stable
 
 # -----[BSPWM Hotkeys]-----
 # Balances windows (equal size)

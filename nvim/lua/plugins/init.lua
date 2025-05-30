@@ -48,7 +48,14 @@ return {
       vim.g.vimtex_view_method = "zathura"
       vim.g.vimtex_compiler_latexmk = {
         out_dir = "/home/j/Documents/Notes/LaTeX_Build",
-        options = { "--shell-escape" },
+        options = { -- deletes default dictionary
+          "--shell-escape",
+          "-verbose",
+          "-file-line-error",
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-f",
+        },
       }
     end,
   },
@@ -139,6 +146,7 @@ return {
     },
   },
 
+  -- Customizations for Nvim Tree
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
