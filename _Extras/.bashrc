@@ -9,12 +9,14 @@ alias adam='setxkbmap -option caps:swapescape' # For normal keyboard use
 alias ramiel='setxkbmap -option' # For split ergomech usage
 alias venvs='source ~/Documents/Environments/env_runner.sh' # Venv selector for Python
 alias notifs='dunstctl set-paused toggle && echo "Paused:" && dunstctl is-paused' # Toggle Notifications
+alias zpdfc="bash ~/.config/zathura/zathura-toggle-theme.sh" # Toggle color theme for Zathura
 
-# ------[Functions]------
+# ------[Functions (Jobs)]------
+# Run Job 
 rj() {
-  src="$1"
-  bin="${src%.cpp}"
-  clang++ -Wall -std=c++11 "$src" -o "$bin.out" && ./"$bin.out"
+    src="$1"
+    bin="${src%.cpp}"
+    clang++ -Wall -std=c++11 "$src" -o "$bin.out" && ./"$bin.out"
 }
 
 # ------[Prompt]------
