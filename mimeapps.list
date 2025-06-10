@@ -10,3 +10,4 @@ text/plain=nvim.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
+audio/flac=mpv.desktop;
