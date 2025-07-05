@@ -1,0 +1,25 @@
+return {
+  "lervag/vimtex",
+  ft = { "tex" },
+  init = function()
+    vim.g.tex_flavor = "latex"
+    vim.g.vimtex_quickfix_mode = 0
+    vim.g.vimtex_view_method = "zathura"
+    vim.opt.conceallevel = 1
+    vim.g.tex_conceal = "abdmg"
+    vim.g.vimtex_compiler_latexmk = {
+      out_dir = "/home/j/Documents/Notes/LaTeX_Build",
+      options = { -- deletes default dictionary
+        "--shell-escape",
+        "-verbose",
+        "-file-line-error",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-f",
+      },
+    }
+    vim.g.vimtex_compiler_latexmk_engines = {
+      _ = "-xelatex",
+    }
+  end,
+}

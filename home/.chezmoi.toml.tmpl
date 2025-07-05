@@ -1,0 +1,51 @@
+{{/*========[General Custom Data]========*/}}
+
+{{- writeToStdout "\n\x1b[34mFULLNAME (.custom_data.fullname):\x1b[0m Respond in the form of your first and last name, separated by a space (E.g.: \"John Smith\"). Do not include middle names; all responses must be of the form \"[First Name] [Last Name]\"\n" -}}
+{{- $fullname := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "Hudson Liu" -}}
+
+{{ if eq $fullname "Hudson Liu" }}
+{{- writeToStdout "\n\x1b[32mIf you specify the full-name value of “Hudson Liu” (me), all template files will act as per my own configurations.\x1b[0m\n" -}}
+{{ end }}
+
+{{- writeToStdout "\n\x1b[34mEMAIL (.custom_data.email):\x1b[0m Enter your email. This will be used for Git.\n" -}}
+{{- $email := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " -}}
+
+{{- writeToStdout "\n\x1b[34mPRIMARY-MONITOR (.custom_data.primary_monitor):\x1b[0m Enter your primary monitor. This is the monitor that takes primary precedence---the one that will display first, if available. That's not the same as the monitor you use most often.\n" -}}
+{{- writeToStdout "" -}}
+{{- $primary_monitor := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "DP-2" -}}
+
+{{- writeToStdout "\n\x1b[34mSECONDARY-MONITOR (.custom_data.secondary_monitor):\x1b[0m Enter your secondary monitor. This acts as your fallback and/or auxiliary monitor.\n" -}}
+{{- $secondary_monitor := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "eDP-1" -}}
+
+
+{{/*========[Polybar]========*/}}
+
+{{- writeToStdout "\n\x1b[34mBACKLIGHT (.custom_data.polybar.backlight):\x1b[0m Enter the name of your backlight. If you’re not sure how to do this, run \"ls -1 /sys/class/backlight/\"; the first result should be your backlight’s name.\n" -}}
+{{- $backlight := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "intel_backlight" -}}
+
+{{ if eq $backlight "intel_backlight" }}
+{{- writeToStdout "\n\x1b[32mYou entered \"intel_backlight\". Note that, for the Polybar module to work, you may have to run the following commands:\nsudo chmod 777 /sys/class/backlight/intel_backlight/brightness\nsudo chmod 777 /sys/class/backlight/intel_backlight/actual_brightness\x1b[0m\n" -}}
+{{ end }}
+
+{{- writeToStdout "\n\x1b[34mBATTERY (.custom_data.polybar.battery):\x1b[0m As with the backlight, enter the name of your battery. To find it, run \"ls -1 /sys/class/power_supply/\"\n" -}}
+{{- $battery := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "BAT0" -}}
+
+{{- writeToStdout "\n\x1b[34mADAPTER (.custom_data.polybar.adapter):\x1b[0m Follow same as prior.\n" -}}
+{{- $adapter := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "AC" -}}
+
+
+{{/*========[TOML Template]========*/}}
+
+[edit]
+	command = "nvim"
+[git]
+	autoAdd = true
+[data]
+	fullname = {{ $fullname | quote }}
+  email = {{ $email | quote }}
+	primary_monitor = {{ $primary_monitor | quote }}
+	secondary_monitor = {{ $secondary_monitor | quote }}
+[data.polybar]
+	backlight = {{ $backlight | quote }}
+	battery = {{ $battery | quote }}
+	adapter = {{ $adapter | quote }}
