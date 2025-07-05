@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/Tokyo-Night/docs/Main-Showcase.png" width="60%">
+  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Main-Showcase.png" width="60%">
   <br>
   Arch Dotfiles (w/ Chezmoi)
   <br>
