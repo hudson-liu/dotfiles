@@ -21,21 +21,20 @@ chezmoi init --apply Hudson-Liu/Dotfiles
 ```
 
 After running the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`.
-## Screenshots
+## Screenshots/Demo
 
 | Empty Layout | Floating Layout | Tiled Layout |
 |--------------|-----------------|--------------|
 | ![Empty](./docs/Empty-Layout.png) | ![Floating](./docs/Floating-Layout.png) | ![Tiled](./docs/Tiling-Layout.png) |
 
-## Demoes
 <div align="center">
   <p><b>Initial Chezmoi Installation/Setup</b></p>
-  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Chezmoi-Demo.gif" alt="initial chezmoi installation setup">
+  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Chezmoi-Demo.gif" alt="initial chezmoi installation setup" width="75%">
 </div>
 
 <div align="center">
   <p><b>Python Virtual Environment Selector</b></p>
-  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Venv-Selector-Demo.gif" alt="selecting a virtual environment">
+  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Venv-Selector-Demo.gif" alt="selecting a virtual environment" width="75%">
 </div>
 
 ## Inspiration
