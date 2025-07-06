@@ -1,125 +1,125 @@
 # -----[Screenshot]-----
 super + s
-    dunstify "Taking Screenshot (Normal)" \
-	&& maim -s \
+  dunstify "Taking Screenshot (Normal)" \
+  && maim -s \
     | tee "$HOME/Pictures/Screenshots/$(date +'%b %d, %r').png" \
     | xclip -selection clipboard -t image/png
 super + shift + s
-    dunstify "Taking Screenshot (Notes)" \
-	&& maim -s \
+  dunstify "Taking Screenshot (Notes)" \
+  && maim -s \
     | tee "$HOME/Documents/Notes/Images/$(date +'%b %d, %r').png" \
     | xclip -selection clipboard -t image/png
 
 # -----[Custom Startup Script]-----
 super + shift + y
-    bash ~/.config/_Extras/desk.sh
+  bash ~/.config/_Extras/desk.sh
 
 # -----[Controls]-----
 XF86MonBrightness{Up,Down}  
-    brightnessctl s 9600{+,-}  
+  brightnessctl s 9600{+,-}  
 XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +5%
+  pactl set-sink-volume 0 +5%
 XF86AudioLowerVolume
-    pactl set-sink-volume 0 -5%
+  pactl set-sink-volume 0 -5%
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+  pactl set-sink-mute 0 toggle
 
 # -----[Tabs (Tabbed)]-----
 # Add current window to tabbed window
 ctrl + alt + {Left,Down,Up,Right}
-    tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
+  tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
 # Create/remove from tabbed container
 super + z 
-    id=$(bspc query -N -n); \
-    [[ "$(tabc printclass $id)" == "tabbed" ]] \
-    && tabc detach $id \
-    || tabc create $id 
+  id=$(bspc query -N -n); \
+  [[ "$(tabc printclass $id)" == "tabbed" ]] \
+  && tabc detach $id \
+  || tabc create $id 
 
 # -----[Launch Programs]-----
 # Launch terminal emulator
 super + Return
-	kitty
+  kitty
 # Launch thunar's bookshelf
 super + q
-    thunar
+  thunar
 # Launch program
 super + d
-	rofi -show drun
+  rofi -show drun
 # Launch neovim
 super + shift + n
-    kitty & nvim
+  kitty & nvim
 # Launch chrome
 super + a
-    google-chrome-stable
+  google-chrome-stable
 
 # -----[BSPWM Hotkeys]-----
 # Balances windows (equal size)
 super + shift + d
-	bspc node @/ -B
+  bspc node @/ -B
 # Reload SXHKD's configuration
 super + Escape
-	pkill -USR1 -x sxhkd
+  pkill -USR1 -x sxhkd
 # Quit/restart BSPWM
 super + shift + r
-	bspc wm -r
+  bspc wm -r
 # Close & kill window
 super + shift + q
-	bspc node -c
+  bspc node -c
 # Toggle monocle layout
 super + m
-	bspc desktop -l next
+  bspc desktop -l next
 # Send newest marked node to newest preselected node
 super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+  bspc node newest.marked.local -n newest.!automatic.local
 # For flashfocus, flash the current window
 super + n
-    flash_window
+  flash_window
 # Toggle floating window
 super + shift + space
-    if [ -z "$(bspc query -N -n focused.floating)" ]; then \
-        bspc node focused -t floating; \
-    else \
-        bspc node focused -t tiled; \
-    fi
+  if [ -z "$(bspc query -N -n focused.floating)" ]; then \
+    bspc node focused -t floating; \
+  else \
+    bspc node focused -t tiled; \
+  fi
 # Move floating window
 super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+  bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # -----[State/Flags]-----
 # Set window state
 super + {t,shift + t,f}
-	bspc node -t {tiled,pseudo_tiled,fullscreen}
+  bspc node -t {tiled,pseudo_tiled,fullscreen}
 # Set node flags
 super + ctrl + {m,y}
-	bspc node -g {marked,sticky}
+  bspc node -g {marked,sticky}
 
 # -----[Focus/Swap]-----
 # Focus/swap node in given direction
 super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
+  bspc node -{f,s} {west,south,north,east}
 # Focus the next/previous window in the current desktop
 super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
+  bspc node -f {next,prev}.local.!hidden.window
 # Focus adjacent desktop
 super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+  bspc desktop -f {prev,next}.local
 # Focus/send-to given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} focused:^{1-9,10}
+  bspc {desktop -f,node -d} focused:^{1-9,10}
 
 # -----[Preselect]-----
 # Preselect direction
 super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+  bspc node -p {west,south,north,east}
 # Cancel preselection
 super + ctrl + space
-	bspc node -p cancel
+  bspc node -p cancel
 
 # -----[Resize]-----
 # Expand window size
 super + alt + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+  bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 # Contract window size
 super + alt + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+  bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 

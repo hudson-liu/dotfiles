@@ -4,6 +4,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.g.vimtex_syntax_enabled = 0
+vim.g.use_tmp_buffer = 1
 
 -- Set Options
 vim.opt.termguicolors = true

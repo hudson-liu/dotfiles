@@ -37,15 +37,15 @@
 {{/*========[TOML Template]========*/}}
 
 [edit]
-	command = "nvim"
+  command = "nvim"
 [git]
-	autoAdd = true
+  autoAdd = true
 [data]
-	fullname = {{ $fullname | quote }}
+  fullname = {{ $fullname | quote }}
   email = {{ $email | quote }}
-	primary_monitor = {{ $primary_monitor | quote }}
-	secondary_monitor = {{ $secondary_monitor | quote }}
+  primary_monitor = {{ $primary_monitor | quote }}
+  secondary_monitor = {{ $secondary_monitor | quote }}
 [data.polybar]
-	backlight = {{ $backlight | quote }}
-	battery = {{ $battery | quote }}
-	adapter = {{ $adapter | quote }}
+  backlight = {{ $backlight | quote }}
+  battery = {{ $battery | quote }}
+  adapter = {{ $adapter | quote }}
