@@ -27,6 +27,16 @@ After running the second command, Chezmoi will prompt various questions from `.c
 |--------------|-----------------|--------------|
 | ![Empty](./docs/Empty-Layout.png) | ![Floating](./docs/Floating-Layout.png) | ![Tiled](./docs/Tiling-Layout.png) |
 
+## Demoes
+<div align="center">
+  <p><b>Initial Chezmoi Installation/Setup</b></p>
+  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Chezmoi-Demo.gif" alt="initial chezmoi installation setup">
+</div>
+
+<div align="center">
+  <p><b>Python Virtual Environment Selector</b></p>
+  <img src="https://github.com/Hudson-Liu/Dotfiles/blob/main/docs/Venv-Selector-Demo.gif" alt="selecting a virtual environment">
+</div>
 
 ## Inspiration
 - [Manas140's Dotfiles](https://github.com/Manas140/dotfiles)
