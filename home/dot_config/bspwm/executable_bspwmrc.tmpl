@@ -8,13 +8,11 @@ flashfocus & # Shows active windows
 bash ~/.config/polybar/launch.sh & # Status Bar
 xautolock -time 5 -locker "systemctl suspend" -detectsleep & # Autolock laptop
 fcitx5 &
-
 {{ if eq .fullname "Hudson Liu" }}
 # -----[Xinput Configuration]-----
 DEVICE_NAME="Apple Inc. Magic Trackpad"
 xinput --set-prop "$DEVICE_NAME" "libinput Accel Speed" -0.15
 xinput --set-prop "$DEVICE_NAME" "libinput Accel Profile Enabled" 1, 0, 0
-
 {{ end }}
 # -----[Wallpaper]-----
 feh --bg-fill ~/Pictures/Wallpapers/"Tokyo Night Abstract.png"&

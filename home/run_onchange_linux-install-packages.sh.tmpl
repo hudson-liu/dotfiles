@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ======[Pacman]======
+pacman_pkgs="{{ .packages.pacman | join " " }}"
+sudo pacman -S --needed $pacman_pkgs
+
+# ======[Yay]======
+aur_pkgs="{{ .packages.aur | join " " }}"
+yay -S --needed $aur_pkgs

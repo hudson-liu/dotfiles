@@ -12,7 +12,7 @@ super + shift + s
 
 # -----[Custom Startup Script]-----
 super + shift + y
-  bash ~/.config/_Extras/desk.sh
+  bash ~/.local/bin/desk.sh
 
 # -----[Controls]-----
 XF86MonBrightness{Up,Down}  

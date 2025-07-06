@@ -1,0 +1,9 @@
+[packages]
+aur = [
+  "flashfocus",
+  "xautolock",
+  "google-chrome",
+  "catnap-git",
+  "xcursor-breeze-neutral-git",
+  "tokyonight-gtk-theme-git",
+]

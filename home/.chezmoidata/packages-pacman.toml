@@ -1,0 +1,52 @@
+[packages]
+pacman = [
+  # Xorg
+  "xorg-xinput",
+  "xorg-xrandr",
+
+  # BSPWM (& SXHKD)
+  "bspwm",
+  "picom",
+  "polkit-gnome",
+  "fcitx5-im", "fcitx5-chinese-addons", "fcitx5-lua",
+  "feh",
+
+  # SXHKD (& BSPWM)
+  "sxhkd",
+  "dunst",
+  "maim",
+  "xclip",
+  "brightnessctl",
+  "pipewire-pulse",
+  "thunar",
+  "rofi",
+
+  # Kitty
+  "kitty",
+  "ttf-firacode-nerd",
+  "ttf-jetbrains-mono-nerd",
+
+  # GTK
+  "lxappearance",
+  "gtk-engine-murrine",
+
+  # Neovim
+  "neovim",
+  "zathura",
+
+  # Python/C++
+  "pyenv",
+  "python-termcolor",
+  "clang",
+
+  # LSPs
+  "pyright",
+  "marksman",
+  "texlab",
+  "lua-language-server",
+  "ccls",
+  
+  # Misc.
+  "polybar",
+  "networkmanager"
+]
