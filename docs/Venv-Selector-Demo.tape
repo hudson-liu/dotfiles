@@ -21,10 +21,10 @@ Show
 Type "v"
 Sleep 500ms
 Enter
-Sleep 2s
+Sleep 3s
 
 Type "1"
 Sleep 500ms
 Enter
-Sleep 2s
+Sleep 5s
 
