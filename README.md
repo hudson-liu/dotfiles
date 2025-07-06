@@ -21,7 +21,7 @@ chezmoi init --apply Hudson-Liu/Dotfiles
 ```
 
 After running the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`.
-## Screenshots/Demo
+## Screenshots + Demo
 
 | Empty Layout | Floating Layout | Tiled Layout |
 |--------------|-----------------|--------------|
