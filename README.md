@@ -12,6 +12,10 @@ Dotfiles for a fairly minimal "Tokyo Night"-themed Arch Linux setup. This repo i
 Also, fair warning: I strongly recommend only testing these dotfiles on a **fresh, blank install of Arch Linux**. These dotfiles _do not work_ unless you specifically use BSPWM, Pipewire/Pulseaudio, and a number of other applications—Chezmoi should auto-install these, but if you already have an existing DE/WM set up, then these dots likely won't work as intended. For a quick fresh install, I recommend using the `archinstall` script and picking the "minimal" preset.
 
 ## Installation
+The following assumptions are made:
+- Dotfiles are placed in ~/.config/
+- Home directory is stored in $HOME variable
+
 > [!IMPORTANT]
 > Go through _all files_ in this repo before running `chezmoi init`. Certain directories are tagged with the "exact_" state attribute, so **existing configurations may be deleted without backup**.
 
@@ -21,7 +25,7 @@ chezmoi init --apply Hudson-Liu/Dotfiles
 ```
 
 After running the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`.
-## Screenshots/Demo
+## Screenshots + Demo
 
 | Empty Layout | Floating Layout | Tiled Layout |
 |--------------|-----------------|--------------|
