@@ -18,31 +18,31 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.expandtab = true
 if vim.g.neovide then
-	vim.opt.guifont = "FiraCode_Nerd_Font:h8"
+  vim.opt.guifont = "FiraCode_Nerd_Font:h8"
 end
 
 -- Loads Plugins
-require("config.lazy")
+require "config.lazy"
 
 -- Sets Color Theme
-vim.cmd([[colorscheme tokyonight]])
+vim.cmd [[colorscheme tokyonight]]
 
 -- Loads Mappings
-require("keymaps")
+require "keymaps"
 
 -- LSPs
-vim.lsp.enable("pyright") -- Python
-vim.lsp.enable("marksman") -- Markdown
-vim.lsp.enable("texlab") -- LaTeX
-vim.lsp.enable("lua_ls") -- Lua
-vim.lsp.enable("ccls") -- C/C++
+vim.lsp.enable "pyright" -- Python
+vim.lsp.enable "marksman" -- Markdown
+vim.lsp.enable "texlab" -- LaTeX
+vim.lsp.enable "lua_ls" -- Lua
+vim.lsp.enable "ccls" -- C/C++
 
 -- Autocommands
 vim.api.nvim_create_autocmd({ "BufWinEnter", "BufReadPost", "BufNewFile" }, { command = "call glyph_palette#apply()" })
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "py", "md" },
-	callback = function()
-		vim.opt.tabstop = 4
-		vim.opt.shiftwidth = 4
-	end,
+  pattern = { "py", "md" },
+  callback = function()
+    vim.opt.tabstop = 4
+    vim.opt.shiftwidth = 4
+  end,
 })

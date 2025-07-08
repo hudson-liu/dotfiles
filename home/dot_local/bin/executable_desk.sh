@@ -25,7 +25,7 @@ launch_background "google-chrome-stable --profile-directory='Default'" 3
 # -----[Workspace Beta]-----
 switch_workspace 2
 
-launch_background "google-chrome-stable --profile-directory='Profile 1'" 3
+launch_background "google-chrome-stable --profile-directory='Profile 15'" 3
 
 # -----[Workspace Epsilon]-----
 switch_workspace 5
@@ -41,7 +41,7 @@ bspc node -z left -250 0
 sleep 0.1
 bspc node -z top 0 -420
 sleep 0.2
-xdotool type "nvim ~/Documents/Notes/Personal/t-*.md"
+xdotool type "nv ~/Documents/Notes/Personal/t-*.md"
 sleep 0.5
 xdotool key Return
 sleep 0.5
