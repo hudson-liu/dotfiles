@@ -21,9 +21,10 @@ The following assumptions are made:
 > [!IMPORTANT]
 > Go through _all files_ in this repo before running `chezmoi init`. Certain directories are tagged with the "exact_" state attribute, so **existing configurations may be deleted without backup**.
 
-For a quick fresh install, I recommend using the archinstall script—the exported JSON configuration is at [./extras/user\_configuration.json](https://github.com/hudson-liu/dotfiles/extras/archinstall.json), you can use it with:
+For a quick fresh install, I recommend using the archinstall script—the exported JSON configuration is at [./extras/archinstall.json](https://github.com/hudson-liu/dotfiles/blob/main/extras/archinstall.json), you can use it with:
 ```bash
-archinstall --config https://github.com/hudson-liu/dotfiles/extras/archinstall.json
+curl -o tmp.json 'https://raw.githubusercontent.com/hudson-liu/dotfiles/main/extras/archinstall.json'
+archinstall --config tmp.json
 ```
 
 Then, to use the dots, simply clone the dotfiles repo:
