@@ -8,7 +8,7 @@ return {
     vim.opt.conceallevel = 1
     vim.g.tex_conceal = "abdmg"
     vim.g.vimtex_compiler_latexmk = {
-      out_dir = "/home/j/Documents/Notes/LaTeX_Build",
+      out_dir = "/home/j/documents/notes/latex_build/",
       options = { -- deletes default dictionary
         "--shell-escape",
         "-verbose",

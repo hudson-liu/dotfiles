@@ -42,7 +42,7 @@ bspc node -z left -250 0
 sleep 0.1
 bspc node -z top 0 -420
 sleep 0.2
-xdotool type "nv ~/Documents/Notes/Personal/t-*.md"
+xdotool type "nv ~/documents/notes/personal/t-*.md"
 sleep 0.5
 xdotool key Return
 sleep 0.5
@@ -69,10 +69,3 @@ sleep 0.1
 bspc node -v 0 290
 sleep 0.1
 
-# -----[Workspace Zeta]-----
-switch_workspace 6
-launch_background "spotify" 2
-
-# # -----[Workspace Eta]---
-# switch_workspace 7
-# launch_background "vesktop" 2

@@ -10,7 +10,7 @@ The `env_list.txt` file contains the list of all environments. For instance, a p
 ├── env_script.py
 └── README.md
 ```
-Note that, in the formatting of the env_list file, the "Env_" prefix should be removed. Do not include whitespaces in the name of the virtual environment.
+Note that, in the formatting of the env\_list file, the "Env_" prefix should be removed. Do not include whitespaces in the name of the virtual environment.
 
 Also, only the `env_runner.sh` file should ever be directly run. To select an environment, run the following command: 
 ```bash

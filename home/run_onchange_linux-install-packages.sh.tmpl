@@ -1,6 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+read -p "Would you like to install/update packages? (y/n) " -n 1
+case "$REPLY" in 
+  y|Y) ;;
+  n|N) 
+    printf "\nokie, proceeding w/o installing... :c\n"
+    exit 0
+  ;;
+  *) 
+    printf "\nInvalid input, proceeding w/o installing.\n"
+    exit 0
+  ;;
+esac
+
 # ======[Pacman]======
 pacman_pkgs="
 {{ range .packages.pacman }}
@@ -14,3 +27,4 @@ sudo pacman -S --needed $pacman_pkgs
 # ======[Yay]======
 aur_pkgs="{{ .packages.aur.all | join " " }}"
 yay -S --needed $aur_pkgs
+

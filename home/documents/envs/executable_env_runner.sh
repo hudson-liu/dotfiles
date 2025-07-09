@@ -1,6 +1,6 @@
 # Shell wrapper for Python environment script.
 
-mypath="$HOME/Documents/Environments/" 
+mypath="$HOME/documents/envs/" 
 
 cd $mypath
 python env_script.py
