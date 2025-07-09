@@ -2,9 +2,15 @@
 set -euo pipefail
 
 # ======[Pacman]======
-pacman_pkgs="{{ .packages.pacman | join " " }}"
+pacman_pkgs="
+{{ range .packages.pacman }}
+  {{ range . }}
+    {{- . }} 
+  {{ end }}
+{{- end }}
+"
 sudo pacman -S --needed $pacman_pkgs
 
 # ======[Yay]======
-aur_pkgs="{{ .packages.aur | join " " }}"
+aur_pkgs="{{ .packages.aur.all | join " " }}"
 yay -S --needed $aur_pkgs

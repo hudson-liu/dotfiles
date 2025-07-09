@@ -19,6 +19,16 @@ The following assumptions are made:
 > [!IMPORTANT]
 > Go through _all files_ in this repo before running `chezmoi init`. Certain directories are tagged with the "exact_" state attribute, so **existing configurations may be deleted without backup**.
 
+First, install the `yay` AUR helper (if not already present):
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+Then, clone the dotfiles repo:
+
 ```bash
 sudo pacman -S chezmoi
 chezmoi init --apply Hudson-Liu/Dotfiles

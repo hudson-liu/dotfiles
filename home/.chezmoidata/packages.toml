@@ -1,0 +1,105 @@
+[packages.pacman]
+core_apps = [
+  "bspwm", "sxhkd",
+  "picom", 
+  "thunar", "yazi", 
+  "kitty", 
+  "zathura", 
+  "neovim",
+  "polybar",
+]
+auxiliary_pkgs = [
+  # Thunar
+  "tumbler",
+  "thunar-archive-plugin",
+  "thunar-media-tags-plugin",
+  "thunar-volman",
+  "ntfs-3g",
+  # Zathura
+  "zathura-pdf-mupdf",
+  # Neovim
+  "tree-sitter-cli",
+  # GTK
+  "lxappearance",
+  "gtk-engine-murrine",
+]
+system_service = [ 
+  "polkit-gnome", # Auth
+  "fcitx5-im", "fcitx5-chinese-addons", "fcitx5-lua", # Pinyin
+  "feh", # Wallpaper
+  "dunst", # Notifs
+  "maim", "xclip", # Screenshots
+  "brightnessctl", # Brightness ctrl. w keyboard
+  "pipewire", "pipewire-pulse", # Audio
+  "rofi", # Application Selector
+]
+fonts = [
+  "ttf-firacode-nerd",
+  "ttf-jetbrains-mono-nerd",
+  "noto-fonts-cjk",
+  "noto-fonts-emoji",
+]
+
+lsp = [
+  "pyright",
+  "marksman",
+  "texlab",
+  "lua-language-server",
+  "ccls",
+]
+format = [
+  "stylua",
+  "mdformat",
+]
+texlive = [
+  "texlive-basic",
+  "texlive-bibtexextra",
+  "texlive-binextra",
+  "texlive-context",
+  "texlive-fontsextra",
+  "texlive-fontsrecommended",
+  "texlive-fontutils",
+  "texlive-formatsextra",
+  "texlive-games",
+  "texlive-humanities",
+  "texlive-latex",
+  "texlive-latexextra",
+  "texlive-latexrecommended",
+  "texlive-luatex",
+  "texlive-mathscience",
+  "texlive-metapost",
+  "texlive-music",
+  "texlive-pictures",
+  "texlive-plaingeneric",
+  "texlive-pstricks",
+  "texlive-publishers",
+  "texlive-xetex",
+]
+dev = [
+  "pyenv",
+  "python-termcolor",
+  "clang",
+]
+x11 = [
+  "xorg-xinput",
+  "xorg-xinit",
+  "xorg-xrandr",
+]
+misc = [
+  "networkmanager",
+  "yazi",
+  "plocate",
+  "vhs"
+]
+
+[packages.aur]
+all = [
+  "flashfocus",
+  "xautolock",
+  "google-chrome",
+  "catnap-git",
+  "xcursor-breeze-neutral-git",
+  "tokyonight-gtk-theme-git",
+  "tumbler-extra-thumbnailers",
+  "tex-fmt"
+]
