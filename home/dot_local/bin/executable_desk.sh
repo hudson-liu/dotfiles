@@ -28,6 +28,7 @@ switch_workspace 2
 launch_background "google-chrome-stable --profile-directory='Profile 15'" 3
 
 # -----[Workspace Epsilon]-----
+# Check for existance of To-Do file
 switch_workspace 5
 
 launch_background "kitty" 0.3
@@ -45,8 +46,6 @@ xdotool type "nv ~/Documents/Notes/Personal/t-*.md"
 sleep 0.5
 xdotool key Return
 sleep 0.5
-xdotool key "Ctrl+n"
-sleep 0.2
 
 launch_background "kitty" 0.3
 xdotool key "Super_L+Shift+space"

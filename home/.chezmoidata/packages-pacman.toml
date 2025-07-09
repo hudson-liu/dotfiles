@@ -2,6 +2,7 @@
 pacman = [
   # Xorg
   "xorg-xinput",
+  "xorg-xinit",
   "xorg-xrandr",
 
   # BSPWM (& SXHKD)
@@ -18,13 +19,24 @@ pacman = [
   "xclip",
   "brightnessctl",
   "pipewire-pulse",
-  "thunar",
   "rofi",
+
+  # Thunar
+  "thunar",
+  "tumbler",
+  "thunar-archive-plugin",
+  "thunar-media-tags-plugin",
+  "thunar-volman",
+  "ntfs-3g",
 
   # Kitty
   "kitty",
+
+  # Fonts
   "ttf-firacode-nerd",
   "ttf-jetbrains-mono-nerd",
+  "noto-fonts-cjk",
+  "noto-fonts-emoji",
 
   # GTK
   "lxappearance",
@@ -32,7 +44,11 @@ pacman = [
 
   # Neovim
   "neovim",
+  "tree-sitter-cli",
+
+  # Zathura
   "zathura",
+  "zathura-pdf-mupdf",
 
   # Python/C++
   "pyenv",
@@ -45,8 +61,41 @@ pacman = [
   "texlab",
   "lua-language-server",
   "ccls",
+
+  # Formatters
+  "stylua",
+  "mdformat",
   
-  # Misc.
+  # Misc. Utils
   "polybar",
-  "networkmanager"
+  "networkmanager",
+  "yazi",
+  "plocate",
+
+  # Texlive
+  "texlive-basic",
+  "texlive-bibtexextra",
+  "texlive-binextra",
+  "texlive-context",
+  "texlive-fontsextra",
+  "texlive-fontsrecommended",
+  "texlive-fontutils",
+  "texlive-formatsextra",
+  "texlive-games",
+  "texlive-humanities",
+  "texlive-latex",
+  "texlive-latexextra",
+  "texlive-latexrecommended",
+  "texlive-luatex",
+  "texlive-mathscience",
+  "texlive-metapost",
+  "texlive-music",
+  "texlive-pictures",
+  "texlive-plaingeneric",
+  "texlive-pstricks",
+  "texlive-publishers",
+  "texlive-xetex",
+
+  # Developing this config
+  "vhs"
 ]

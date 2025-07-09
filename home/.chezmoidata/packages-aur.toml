@@ -6,4 +6,6 @@ aur = [
   "catnap-git",
   "xcursor-breeze-neutral-git",
   "tokyonight-gtk-theme-git",
+  "tumbler-extra-thumbnailers",
+  "tex-fmt"
 ]
