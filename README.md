@@ -9,32 +9,30 @@
 
 Dotfiles for a fairly minimal "Tokyo Night"-themed Arch Linux setup. This repo is only updated on a semi-regular basis, and it's entirely tailored to my personal workflow; everything _should_ work OOTB, but I can't guarantee full reproducibility across all machines (though feel free to create a new [issue](https://github.com/hudson-liu/dotfiles/issues) if something is broken).
 
-Also, fair warning: I strongly recommend only testing these dotfiles on a **fresh, blank install of Arch Linux**. These dotfiles _do not work_ unless you specifically use BSPWM, Pipewire/Pulseaudio, and a number of other applications—Chezmoi should auto-install these, but if you already have an existing DE/WM set up, then these dots likely won't work as intended. For a quick fresh install, I recommend using the provided script in [./extras/install-script.sh](https://github.com/hudson-liu/dotfiles/extras/install-script.sh).
+Also, fair warning: I strongly recommend only testing these dotfiles on a **fresh, blank install of Arch Linux**. These dotfiles _do not work_ unless you specifically use BSPWM, Pipewire/Pulseaudio, and a number of other applications—Chezmoi should auto-install these, but if you already have an existing DE/WM set up, then these dots likely won't work as intended. 
+
 
 ## Installation
 The following assumptions are made:
 - Dotfiles are placed in ~/.config/
 - Home directory is stored in $HOME variable
+- [yay](https://github.com/Jguer/yay) is installed
 
 > [!IMPORTANT]
 > Go through _all files_ in this repo before running `chezmoi init`. Certain directories are tagged with the "exact_" state attribute, so **existing configurations may be deleted without backup**.
 
-On a
+For a quick fresh install, I recommend using the archinstall script—the exported JSON configuration is at [./extras/user\_configuration.json](https://github.com/hudson-liu/dotfiles/extras/archinstall.json), you can use it with:
 ```bash
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
+archinstall --config https://github.com/hudson-liu/dotfiles/extras/archinstall.json
 ```
 
-Then, clone the dotfiles repo:
-
+Then, to use the dots, simply clone the dotfiles repo:
 ```bash
 sudo pacman -S chezmoi
 chezmoi init --apply hudson-liu
 ```
 
-After running the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`.
+After running the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. 
 ## Screenshots + Demo
 
 | Empty Layout | Floating Layout | Tiled Layout |
