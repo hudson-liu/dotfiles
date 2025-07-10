@@ -47,10 +47,19 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "toggleterm", "NvimTree", "alpha" },
+  pattern = "*",
+  callback = function(args)
+    local ft = vim.bo[args.buf].filetype
+    if ft == "toggleterm" or ft == "NvimTree" or ft == "alpha" then
+      vim.keymap.set("n", "<leader>a", function()
+        vim.notify("Unsupported FileType for Aerial", vim.log.levels.WARN)
+      end, { buffer = args.buf })
+    end
+  end,
+})
+vim.api.nvim_create_autocmd("VimResized", {
   callback = function()
-    vim.keymap.set("n", "<leader>a", function()
-      vim.notify("Unsupported FileType for Aerial", vim.log.levels.WARN)
-    end)
+    vim.cmd "AerialClose"
+    vim.cmd "AerialOpen float"
   end,
 })

@@ -10,7 +10,7 @@ map("n", "<C-k>", "<C-w>k") -- (Down)
 map("n", "<C-l>", "<C-w>l") -- (Right)
 
 -- Aerial
-map("n", "<leader>a", "<cmd>AerialToggle!<cr>")
+map("n", "<leader>a", "<cmd>AerialToggle! float<cr>")
 
 -- VimTeX
 map("n", "<leader>co", "<cmd>VimtexCompile<cr>")
@@ -33,11 +33,9 @@ map("n", "<C-\\>", function()
   local tr_api = require "nvim-tree.api"
 
   if tr_api.tree.is_visible() then
-    local cmd1 = string.format "NvimTreeToggle"
-    local cmd2 = string.format "ToggleTerm"
-    vim.cmd(cmd1)
-    vim.cmd(cmd2)
-    vim.cmd(cmd1)
+    vim.cmd "NvimTreeToggle"
+    vim.cmd "ToggleTerm"
+    vim.cmd "NvimTreeToggle"
     vim.cmd "wincmd p"
     vim.defer_fn(function()
       vim.notify("Auto-Resized Terminal Window", vim.log.levels.WARN)

@@ -14,5 +14,9 @@ return {
     layout = {
       width = 20,
     },
+    float = {
+      relative = "editor",
+      height = 20,
+    },
   },
 }
