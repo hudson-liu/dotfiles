@@ -7,33 +7,36 @@
   <img src="https://img.shields.io/github/license/hudson-liu/dotfiles?style=for-the-badge&labelColor=%23222436&color=%235771AA" alt="License">
 </h1>
 
-Dotfiles for a fairly minimal "Tokyo Night"-themed Arch Linux setup. This repo is only updated on a semi-regular basis, and it's entirely tailored to my personal workflow; everything _should_ work OOTB, but I can't guarantee full reproducibility across all machines (though feel free to create a new [issue](https://github.com/hudson-liu/dotfiles/issues) if something is broken).
+Dotfiles for a fairly minimal "Tokyo Night"-themed Arch Linux setup. This repo is only updated on a semi-regular basis, and it's entirely tailored to my personal workflow; everything _should_ work out-of-the-box, but I can't guarantee full reproducibility across all machines (though feel free to create a new [issue](https://github.com/hudson-liu/dotfiles/issues) if something is broken).
 
-Also, fair warning: I strongly recommend only testing these dotfiles on a **fresh, blank install of Arch Linux**. These dotfiles _do not work_ unless you specifically use BSPWM, Pipewire/Pulseaudio, and a number of other applications—Chezmoi should auto-install these, but if you already have an existing DE/WM set up, then these dots likely won't work as intended. 
+Also, fair warning: I strongly recommend only testing these dotfiles on a **fresh, blank install of Arch Linux**. These dotfiles _do not work_ unless you specifically use BSPWM, Pipewire/Pulseaudio, and a number of other applications—Chezmoi should auto-install these, but if you already have an existing DE/WM set up, then these dots likely won't work as intended.
 
 
 ## Installation
 The following assumptions are made:
 - Dotfiles are placed in ~/.config/
 - Home directory is stored in $HOME variable
-- [yay](https://github.com/Jguer/yay) is installed
+- [yay](https://github.com/Jguer/yay?tab=readme-ov-file#installation) is installed
 
 > [!IMPORTANT]
-> Go through _all files_ in this repo before running `chezmoi init`. Certain directories are tagged with the "exact_" state attribute, so **existing configurations may be deleted without backup**.
+> Check through _all files_ in this repo before running `chezmoi init` (or, at the minimum, any directory tagged with `exact_`). Certain directories **may be deleted without backup**, so be careful and don't run anything you don't understand... unless you’re okay with potentially breaking your system or deleting important files (ergo: [running this on a VM](https://wiki.archlinux.org/title/VirtualBox/Install_Arch_Linux_as_a_guest), which I highly recommend).
 
-For a quick fresh install, I recommend using the archinstall script—the exported JSON configuration is at [./extras/archinstall.json](https://github.com/hudson-liu/dotfiles/blob/main/extras/archinstall.json), you can use it with:
+For a quick fresh install, I suggest using the archinstall script—the exported JSON configuration is at [./extras/archinstall.json](https://github.com/hudson-liu/dotfiles/blob/main/extras/archinstall.json), you can use it with:
 ```bash
 curl -o tmp.json 'https://raw.githubusercontent.com/hudson-liu/dotfiles/main/extras/archinstall.json'
 archinstall --config tmp.json
 ```
-
-Then, to use the dots, simply clone the dotfiles repo:
+BSPWM is not usable yet, as SXHKD keybindings aren't set. To use the dots, go to another TTY and clone the dotfiles repo:
 ```bash
-sudo pacman -S chezmoi
-chezmoi init --apply hudson-liu
+sudo pacman -S chezmoi git
+git clone https://github.com/hudson-liu/dotfiles.git ~/.local/share/chezmoi/
+chezmoi init
+chezmoi apply
 ```
+(I don't recommend using `chezmoi init --apply hudson-liu`, as errors can potentially occur during cloning and initialization. Separate commands help with identifying which step went wrong.)
 
-After running the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. 
+After the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. The setup is complete upon reboot. The generated `~/.config/chezmoi/chezmoi.toml` can be manually edited with any text editor. Updates to the package list in `.chezmoidata/packages.toml` will take effect upon re-running `chezmoi apply`
+
 ## Screenshots + Demo
 
 | Empty Layout | Floating Layout | Tiled Layout |

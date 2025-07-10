@@ -80,17 +80,6 @@ dev = [
   "python-termcolor",
   "clang",
 ]
-x11 = [
-  "xorg-xinput",
-  "xorg-xinit",
-  "xorg-xrandr",
-]
-misc = [
-  "networkmanager",
-  "yazi",
-  "plocate",
-  "vhs"
-]
 
 [packages.aur]
 all = [
