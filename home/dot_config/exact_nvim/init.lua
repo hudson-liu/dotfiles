@@ -46,3 +46,11 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.shiftwidth = 4
   end,
 })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "toggleterm", "NvimTree", "alpha" },
+  callback = function()
+    vim.keymap.set("n", "<leader>a", function()
+      vim.notify("Unsupported FileType for Aerial", vim.log.levels.WARN)
+    end)
+  end,
+})

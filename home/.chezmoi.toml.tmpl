@@ -36,10 +36,10 @@
 
 {{/*========[TOML Template]========*/}}
 
+[diff]
+  exclude = ["scripts"]
 [edit]
   command = "nvim"
-[git]
-  autoAdd = true
 [data]
   fullname = {{ $fullname | quote }}
   email = {{ $email | quote }}

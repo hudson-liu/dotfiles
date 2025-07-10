@@ -9,6 +9,9 @@ map("n", "<C-j>", "<C-w>j") -- (Up)
 map("n", "<C-k>", "<C-w>k") -- (Down)
 map("n", "<C-l>", "<C-w>l") -- (Right)
 
+-- Aerial
+map("n", "<leader>a", "<cmd>AerialToggle!<cr>")
+
 -- VimTeX
 map("n", "<leader>co", "<cmd>VimtexCompile<cr>")
 map("n", "<leader>cv", "<cmd>VimtexView<cr>")

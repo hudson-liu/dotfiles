@@ -9,10 +9,18 @@ return {
     local dashboard = require "alpha.themes.dashboard"
     theta.file_icons.provider = "devicons"
     table.remove(theta.buttons.val, 6) -- Remove Broken Config Button
-    table.insert( -- Add Shortcut to Chezmoi Configuration File
+    table.remove(theta.buttons.val, 3) -- Remove New-File Button
+    -- Add Shortcut to Chezmoi Configuration File
+    table.insert( 
       theta.buttons.val,
       dashboard.button("c", "  Configuration", "<cmd>edit ~/.local/share/chezmoi/README.md<CR>")
-    ) -- Add an entry
+    )
+    {{ if eq .fullname "Hudson Liu" }}
+    table.insert(
+      theta.buttons.val,
+      dashboard.button("e", "󱉟  Notes", "<cmd>edit ~/documents/notes/personal/goals.md<CR>")
+    )
+    {{ end }}
     theta.header.val = {
       "                                                    ",
       " ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
