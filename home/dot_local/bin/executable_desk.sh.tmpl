@@ -42,7 +42,11 @@ bspc node -z left -250 0
 sleep 0.1
 bspc node -z top 0 -420
 sleep 0.2
+{{ if eq .fullname "Hudson Liu" }}
 xdotool type "nv ~/documents/notes/personal/t-*.md"
+{{ else }}
+xdotool type "nv"
+{{ end }}
 sleep 0.5
 xdotool key Return
 sleep 0.5

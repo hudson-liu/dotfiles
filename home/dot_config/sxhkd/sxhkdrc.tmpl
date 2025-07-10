@@ -4,11 +4,13 @@ super + s
   && maim -s \
     | tee "$HOME/pictures/screenshots/$(date +'%b %d, %r').png" \
     | xclip -selection clipboard -t image/png
+{{ if eq .fullname "Hudson Liu" }}
 super + shift + s
   dunstify "Taking Screenshot (Notes)" \
   && maim -s \
     | tee "$HOME/documents/notes/images/$(date +'%b %d, %r').png" \
     | xclip -selection clipboard -t image/png
+{{ end }}
 
 # -----[Custom Startup Script]-----
 super + shift + y
