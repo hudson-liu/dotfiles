@@ -2,6 +2,10 @@
 set recolor true
 map <C-i> recolor
 
+# ------[Smooth Scrolling]------
+map j feedkeys "<C-Down>"
+map k feedkeys "<C-Up>"
+
 # ------[Color Theme, Base16 Nord]------
 # Author: "arcticicestudio"
 set default-bg                  "#2E3440"
