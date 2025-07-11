@@ -13,12 +13,12 @@ return {
     -- Add Shortcut to Chezmoi Configuration File
     table.insert( 
       theta.buttons.val,
-      dashboard.button("c", "  Configuration", "<cmd>edit ~/.local/share/chezmoi/README.md<CR>")
+      dashboard.button("c", "  Configuration", "<cmd>cd ~/.local/share/chezmoi/<bar> edit ./README.md<cr>")
     )
     {{ if eq .fullname "Hudson Liu" }}
     table.insert(
       theta.buttons.val,
-      dashboard.button("e", "󱉟  Notes", "<cmd>edit ~/documents/notes/personal/goals.md<CR>")
+      dashboard.button("e", "󱉟  Notes", "<cmd>cd ~/documents/notes<bar> edit ./personal/goals.md<CR>")
     )
     {{ end }}
     theta.header.val = {
