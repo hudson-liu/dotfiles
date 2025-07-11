@@ -37,8 +37,10 @@ vim.lsp.enable "texlab" -- LaTeX
 vim.lsp.enable "lua_ls" -- Lua
 vim.lsp.enable "ccls" -- C/C++
 
--- Autocommands
+-- ======[Autocommands]======
+-- Applies Glyph-Pallette
 vim.api.nvim_create_autocmd({ "BufWinEnter", "BufReadPost", "BufNewFile" }, { command = "call glyph_palette#apply()" })
+-- Changes to 4-Space Tab for Python (& Markdown)
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "py", "md" },
   callback = function()
@@ -46,6 +48,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.shiftwidth = 4
   end,
 })
+-- Prevents Aerial from opening on unsupported window types
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function(args)
@@ -57,9 +60,18 @@ vim.api.nvim_create_autocmd("FileType", {
     end
   end,
 })
+-- Keeps Aerial centered on window resize
 vim.api.nvim_create_autocmd("VimResized", {
   callback = function()
-    vim.cmd "AerialClose"
-    vim.cmd "AerialOpen float"
+    local aerial = require "aerial"
+    if aerial.is_open() then
+      aerial.close()
+      vim.schedule(function()
+        aerial.open {
+          direction = "float",
+          focus = false,
+        }
+      end)
+    end
   end,
 })
