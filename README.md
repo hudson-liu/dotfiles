@@ -26,7 +26,7 @@ For a quick fresh install, I suggest using the archinstall script—the exported
 curl -o tmp.json 'https://raw.githubusercontent.com/hudson-liu/dotfiles/main/extras/archinstall.json'
 archinstall --config tmp.json
 ```
-BSPWM is not usable yet, as SXHKD keybindings aren't set. To use the dots, go to another TTY and clone the dotfiles repo:
+Once you've finished installing Arch, reboot and enter any empty TTY session; BSPWM is not usable upon install as SXHKD keybindings haven't been set. Then, to use the dots, login and clone the dotfiles repo:
 ```bash
 sudo pacman -S chezmoi git
 git clone https://github.com/hudson-liu/dotfiles.git ~/.local/share/chezmoi/
