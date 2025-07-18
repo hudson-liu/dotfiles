@@ -18,7 +18,7 @@ return {
     {{ if eq .fullname "Hudson Liu" }}
     table.insert(
       theta.buttons.val,
-      dashboard.button("e", "󱉟  Notes", "<cmd>cd ~/documents/notes<bar> edit ./personal/goals.md<CR>")
+      dashboard.button("e", "󱉟  Notes", "<cmd>cd ~/documents/notes<bar> edit ./personal/t-*<CR>")
     )
     {{ end }}
     theta.header.val = {
