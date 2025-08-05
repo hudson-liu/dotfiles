@@ -36,6 +36,7 @@ vim.lsp.enable "marksman" -- Markdown
 vim.lsp.enable "texlab" -- LaTeX
 vim.lsp.enable "lua_ls" -- Lua
 vim.lsp.enable "ccls" -- C/C++
+vim.lsp.enable "ts_ls" -- TypeScript
 
 -- ======[Autocommands]======
 -- Applies Glyph-Pallette
@@ -53,7 +54,7 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function(args)
     local ft = vim.bo[args.buf].filetype
-    if ft == "toggleterm" or ft == "NvimTree" or ft == "alpha" then
+    if ft == "NvimTree" or ft == "alpha" then
       vim.keymap.set("n", "<leader>a", function()
         vim.notify("Unsupported FileType for Aerial", vim.log.levels.WARN)
       end, { buffer = args.buf })

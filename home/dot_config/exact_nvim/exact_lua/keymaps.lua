@@ -27,20 +27,3 @@ map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope Help Tags" })
 -- Bufferline
 map("n", "<Tab>", ":BufferLineCycleNext<cr>")
 map("n", "<S-Tab>", ":BufferLineCyclePrev<cr>")
-
--- ToggleTerm
-map("n", "<C-\\>", function()
-  local tr_api = require "nvim-tree.api"
-
-  if tr_api.tree.is_visible() then
-    vim.cmd "NvimTreeToggle"
-    vim.cmd "ToggleTerm"
-    vim.cmd "NvimTreeToggle"
-    vim.cmd "wincmd p"
-    vim.defer_fn(function()
-      vim.notify("Auto-Resized Terminal Window", vim.log.levels.WARN)
-    end, 100)
-  else
-    vim.cmd "ToggleTerm"
-  end
-end)
