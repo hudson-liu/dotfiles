@@ -31,6 +31,9 @@ vim.cmd [[colorscheme tokyonight]]
 require "keymaps"
 
 -- LSPs
+vim.diagnostic.config {
+  virtual_text = true,
+}
 vim.lsp.enable "pyright" -- Python
 vim.lsp.enable "marksman" -- Markdown
 vim.lsp.enable "texlab" -- LaTeX
