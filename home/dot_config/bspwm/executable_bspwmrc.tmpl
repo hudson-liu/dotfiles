@@ -6,7 +6,8 @@ picom & # Compositor
 flashfocus & # Shows active windows
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # Manages GUI authenatication
 bash ~/.config/polybar/launch.sh & # Status Bar
-xautolock -time 5 -locker "systemctl suspend" -detectsleep & # Autolock laptop
+xss-lock --transfer-sleep-lock -- betterlockscreen -l blur & # Locks Laptop
+xautolock -time 5 -locker "systemctl suspend" -detectsleep & # Auto-sleep (Inactivity)
 fcitx5 &
 {{ if eq .fullname "Hudson Liu" }}
 # -----[Xinput Configuration]-----
