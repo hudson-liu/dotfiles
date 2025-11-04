@@ -1,7 +1,7 @@
 return {
   formatters_by_ft = {
     lua = { "stylua" },
-    tex = { "tex-fmt" },
+    tex = { "latexindent" },
     md = { "mdformat" },
   },
   format_on_save = {

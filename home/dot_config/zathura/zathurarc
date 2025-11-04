@@ -9,7 +9,7 @@ map k feedkeys "<C-Up>"
 # ------[Color Theme, Tokyo Night]------
 # Author: "CondensedMilk7"
 set default-bg                  "#1b1d2b"
-set default-fg                  "#a9b1d6"
+set default-fg                  "#ffffff"
 
 set statusbar-fg                "#a9b1d6"
 set statusbar-bg                "#24283b"
@@ -36,6 +36,6 @@ set completion-highlight-fg     "#9aa5ce"
 set completion-highlight-bg     "24283b"
 
 set recolor-lightcolor          "#222436"
-set recolor-darkcolor           "#a9b1d6"
+set recolor-darkcolor           "#e9edfb"
 
 # dark mode true

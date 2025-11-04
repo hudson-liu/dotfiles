@@ -1,0 +1,22 @@
+# Starts tmux, opens nvim in target directory
+
+SESSION="Main-Session"
+tmux has-session -t "$SESSION" 2>/dev/null
+
+
+if [ $? != 0 ]; then
+  {{ if eq .fullname "Hudson Liu" }}
+  BASE_DIR="$HOME/documents/projects/cpp\ practice"
+  {{ else }}
+  BASE_DIR="$HOME/documents"
+  {{ end }}
+  tmux new-session -d -s "$SESSION"
+  tmux send-keys "cd $BASE_DIR && nvim"
+  tmux split-window -v -p 10 -t "$SESSION" 
+  tmux send-keys "cd $BASE_DIR && ls" C-m
+
+  tmux rename-window -t 0 "Neovim-Main"
+  tmux select-pane -t "$SESSION:Neovim-Main.0"
+fi
+
+tmux attach -t "$SESSION"

@@ -3,12 +3,6 @@ local map = vim.keymap.set
 -- Nvim-Tree Toggle
 map("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
 
--- Panel Movement
-map("n", "<C-h>", "<C-w>h") -- (Left)
-map("n", "<C-j>", "<C-w>j") -- (Up)
-map("n", "<C-k>", "<C-w>k") -- (Down)
-map("n", "<C-l>", "<C-w>l") -- (Right)
-
 -- Aerial
 map("n", "<leader>a", "<cmd>AerialToggle! float<cr>")
 

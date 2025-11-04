@@ -74,6 +74,8 @@ texlive = [
   "texlive-pstricks",
   "texlive-publishers",
   "texlive-xetex",
+  "perl-yaml-tiny",
+  "perl-file-homedir",
 ]
 dev = [
   "pyenv",

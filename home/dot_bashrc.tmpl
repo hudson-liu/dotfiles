@@ -11,16 +11,21 @@ alias nv="nvim"
 alias v='source ~/documents/envs/env_runner.sh' # Venv selector for Python
 alias n='dunstctl set-paused toggle && echo "Paused:" && dunstctl is-paused' # Toggle Notifications
 alias z="bash ~/.config/zathura/zathura-toggle-theme.sh" # Toggle color theme for Zathura
+alias tm="bash ~/.local/bin/tm.sh"
 alias cc="cd ~/.local/share/chezmoi/"
 alias cn="cd ~/documents/notes/"
 alias cb="cd ~/documents/bookshelf/"
+{{ if eq .fullname "Hudson Liu" }}
+alias cf="cd ~/documents/projects/cpp\ practice/"
+alias ml="~/matlab/bin/matlab -webui"
+{{ end }}
 
 # ------[Functions (Jobs)]------
 # Run Job 
 rj() {
     src="$1"
     bin="${src%.cpp}"
-    clang++ -Wall -std=c++11 "$src" -o "$bin.out" && ./"$bin.out"
+    clang++ -Wall -std=c++11 "$src" -o "tmp.out" && ./"tmp.out"
 }
 
 # ------[Prompt]------
