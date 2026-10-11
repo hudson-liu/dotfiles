@@ -13,12 +13,13 @@ alias n='dunstctl set-paused toggle && echo "Paused:" && dunstctl is-paused' # T
 alias z="bash ~/.config/zathura/zathura-toggle-theme.sh" # Toggle color theme for Zathura
 alias tm="bash ~/.local/bin/tm.sh"
 alias cc="cd ~/.local/share/chezmoi/"
+{{ if eq .fullname "Hudson Liu" }}
 alias cn="cd ~/documents/notes/"
 alias cb="cd ~/documents/bookshelf/"
-{{ if eq .fullname "Hudson Liu" }}
-alias cf="cd ~/documents/projects/cpp\ practice/"
+alias cf="cd ~/documents/projects/python\ practice/"
 alias ml="~/matlab/bin/matlab -webui"
 {{ end }}
+alias ssh="kitty +kitten ssh"
 
 # ------[Functions (Jobs)]------
 # Run Job 
@@ -37,3 +38,4 @@ export GOPATH=$HOME/.go_workspace
 # ------[Show Fetch]-----
 catnap
 
+export PATH="$HOME/.local/bin:$PATH"

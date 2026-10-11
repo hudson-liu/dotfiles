@@ -53,6 +53,9 @@ super + shift + n
 # Launch chrome
 super + a
   google-chrome-stable
+# Launch stopwatch
+super + i
+  kitty --class lc-stopwatch -e termdown
 
 # -----[BSPWM Hotkeys]-----
 # Balances windows (equal size)
@@ -106,8 +109,8 @@ super + {_,shift + }c
 super + bracket{left,right}
   bspc desktop -f {prev,next}.local
 # Focus/send-to given desktop
-super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} focused:^{1-9,10}
+super + {_,shift + }{1-8}
+    bspc {desktop -f,node -d} focused:^{1,2,4,5,6,7,9,10}
 
 # -----[Preselect]-----
 # Preselect direction

@@ -16,7 +16,7 @@ Also, only the `env_runner.sh` file should ever be directly run. To select an en
 ```bash
 source env_runner.sh
 ```
-The only value that should be manually configured between devices is the value of `pypath` in the `env_runner.sh` file; just set it to where-ever the `env_script.py` program is located. For convenience, it is recommended to alias this command in your `.bashrc`.
+The only value that should be manually configured between devices is the value of `mypath` in the `env_runner.sh` file; just set it to where-ever the `env_script.py` program is located. For convenience, it is recommended to alias this command in your `.bashrc`.
 
 ## Creating New Environments
 To create a new environment, first use pyenv to create a new version of Python (as of 1/30/25, TensorFlow does not yet support Python 3.13):

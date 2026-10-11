@@ -9,7 +9,7 @@ Set Theme "tokyonight"
 
 # Setup Alias b/c ~/.bashrc isn't executed
 Hide
-Type "alias v='source ~/Documents/Environments/env_runner.sh'" 
+Type "alias v='source ~/documents/envs/env_runner.sh'"
 Enter
 Sleep 50ms
 Type "clear"

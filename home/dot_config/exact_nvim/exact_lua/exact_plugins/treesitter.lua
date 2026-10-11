@@ -1,7 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  opts = {
-    ensure_installed = {
+  config = function()
+    require("nvim-treesitter").setup()
+    local ensure_installed = {
       "vim",
       "lua",
       "vimdoc",
@@ -18,6 +19,7 @@ return {
       "json",
       "markdown",
       "vhs",
-    },
-  },
+    }
+    require("nvim-treesitter").install(ensure_installed)
+  end,
 }

@@ -6,7 +6,7 @@ tmux has-session -t "$SESSION" 2>/dev/null
 
 if [ $? != 0 ]; then
   {{ if eq .fullname "Hudson Liu" }}
-  BASE_DIR="$HOME/documents/projects/cpp\ practice"
+  BASE_DIR="$HOME/documents/projects/cses"
   {{ else }}
   BASE_DIR="$HOME/documents"
   {{ end }}

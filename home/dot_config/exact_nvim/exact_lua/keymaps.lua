@@ -7,9 +7,15 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
 map("n", "<leader>a", "<cmd>AerialToggle! float<cr>")
 
 -- VimTeX
-map("n", "<leader>co", "<cmd>VimtexCompile<cr>")
 map("n", "<leader>cv", "<cmd>VimtexView<cr>")
 map("n", "<leader>cq", "<cmd>VimtexStop<cr>")
+map("n", "<leader>co", function()
+  if vim.bo.filetype == "typst" then
+    vim.cmd "TypstWatch"
+  else
+    vim.cmd "VimtexCompile"
+  end
+end)
 
 -- Telescope
 local builtin = require "telescope.builtin"

@@ -12,7 +12,7 @@
 
 {{- writeToStdout "\n\x1b[34mPRIMARY-MONITOR (.custom_data.primary_monitor):\x1b[0m Enter your primary monitor. This is the monitor that takes primary precedence---the one that will display first, if available. That's not the same as the monitor you use most often.\n" -}}
 {{- writeToStdout "" -}}
-{{- $primary_monitor := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "DP-2" -}}
+{{- $primary_monitor := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "DP-3" -}}
 
 {{- writeToStdout "\n\x1b[34mSECONDARY-MONITOR (.custom_data.secondary_monitor):\x1b[0m Enter your secondary monitor. This acts as your fallback and/or auxiliary monitor.\n" -}}
 {{- $secondary_monitor := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "eDP-1" -}}

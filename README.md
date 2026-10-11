@@ -35,7 +35,7 @@ chezmoi apply
 ```
 (I don't recommend using `chezmoi init --apply hudson-liu`, as errors can potentially occur during cloning and initialization. Separate commands help with identifying which step went wrong.)
 
-After the second command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. The setup is complete upon reboot. The generated `~/.config/chezmoi/chezmoi.toml` can be manually edited with any text editor. Updates to the package list in `.chezmoidata/packages.toml` will take effect upon re-running `chezmoi apply`
+After the third command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. The setup is complete upon reboot. The generated `~/.config/chezmoi/chezmoi.toml` can be manually edited with any text editor. Updates to the package list in `.chezmoidata/packages.toml` will take effect upon re-running `chezmoi apply`
 
 ## Screenshots + Demo
 

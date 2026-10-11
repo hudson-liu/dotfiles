@@ -22,16 +22,19 @@ switch_workspace 1
 
 launch_background "google-chrome-stable --profile-directory='Default'" 3
 
+{{ if eq .fullname "Hudson Liu" }}
 # -----[Workspace Beta]-----
 switch_workspace 2
 
 launch_background "google-chrome-stable --profile-directory='Profile 15'" 3
+{{ end }}
 
 # -----[Workspace Epsilon]-----
 # Check for existance of To-Do file
 switch_workspace 5
 
 launch_background "kitty" 0.3
+{{ if eq .fullname "Hudson Liu" }}
 xdotool key "Super_L+Shift+space"
 sleep 0.3
 bspc node -v -290 0
@@ -42,7 +45,6 @@ bspc node -z left -250 0
 sleep 0.1
 bspc node -z top 0 -420
 sleep 0.2
-{{ if eq .fullname "Hudson Liu" }}
 xdotool type "nv ~/documents/notes/personal/t-*.md"
 {{ else }}
 xdotool type "nv"
@@ -52,6 +54,7 @@ xdotool key Return
 sleep 0.5
 
 launch_background "kitty" 0.3
+{{ if eq .fullname "Hudson Liu" }}
 xdotool key "Super_L+Shift+space"
 sleep 0.2
 bspc node -v 290 0
@@ -60,16 +63,18 @@ bspc node -v 0 -200
 sleep 0.1
 bspc node -z top 0 -70
 sleep 0.1
+{{ end }}
 xdotool type "lowfi"
 sleep 0.1
 xdotool key Return
 sleep 0.2
 
 launch_background "thunar" 1
+{{ if eq .fullname "Hudson Liu" }}
 xdotool key "Super_L+Shift+space"
 sleep 0.2
 bspc node -v 460 0
 sleep 0.1
 bspc node -v 0 290
 sleep 0.1
-
+{{ end }}

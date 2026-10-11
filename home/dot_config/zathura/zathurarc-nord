@@ -3,8 +3,8 @@ set recolor true
 map <C-i> recolor
 
 # ------[Smooth Scrolling]------
-map j feedkeys "<C-Down>"
-map k feedkeys "<C-Up>"
+map j scroll smooth-down
+map k scroll smooth-up
 
 # ------[Color Theme, Base16 Nord]------
 # Author: "arcticicestudio"

@@ -3,8 +3,8 @@ set recolor true
 map <C-i> recolor
 
 # ------[Smooth Scrolling]------
-map j feedkeys "<C-Down>"
-map k feedkeys "<C-Up>"
+map j scroll smooth-down
+map k scroll smooth-up
 
 # ------[Color Theme, Tokyo Night]------
 # Author: "CondensedMilk7"
@@ -33,7 +33,7 @@ set completion-bg               "#24283b"
 set completion-fg               "#a9b1d6"
 
 set completion-highlight-fg     "#9aa5ce"
-set completion-highlight-bg     "24283b"
+set completion-highlight-bg     "#24283b"
 
 set recolor-lightcolor          "#222436"
 set recolor-darkcolor           "#e9edfb"

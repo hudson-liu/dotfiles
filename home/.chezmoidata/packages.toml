@@ -4,6 +4,10 @@ core_apps = [
   "picom", 
   "thunar", "yazi", 
   "kitty", 
+  "tmux",
+  "eza",
+  "termdown",
+  "typst",
   "zathura", 
   "neovim",
   "polybar",
@@ -19,12 +23,14 @@ auxiliary_pkgs = [
   "zathura-pdf-mupdf",
   # Neovim
   "tree-sitter-cli",
+  "ripgrep",
   # GTK
   "lxappearance",
-  "gtk-engine-murrine",
 ]
 system_service = [ 
   "polkit-gnome", # Auth
+  "xss-lock", # Locking
+  "xdotool", "xorg-xinput", # X11 controls
   "fcitx5-im", "fcitx5-chinese-addons", "fcitx5-lua", # Pinyin
   "feh", # Wallpaper
   "dunst", # Notifs
@@ -46,6 +52,8 @@ lsp = [
   "texlab",
   "lua-language-server",
   "ccls",
+  "typescript-language-server",
+  "tinymist",
 ]
 format = [
   "stylua",
@@ -87,10 +95,13 @@ dev = [
 all = [
   "flashfocus",
   "xautolock",
+  "betterlockscreen",
+  "lowfi",
   "google-chrome",
   "catnap-git",
   "xcursor-breeze-neutral-git",
   "tokyonight-gtk-theme-git",
+  "gtk-engine-murrine",
   "tumbler-extra-thumbnailers",
   "tex-fmt"
 ]

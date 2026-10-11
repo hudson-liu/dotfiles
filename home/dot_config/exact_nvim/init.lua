@@ -40,6 +40,7 @@ vim.lsp.enable "texlab" -- LaTeX
 vim.lsp.enable "lua_ls" -- Lua
 vim.lsp.enable "ccls" -- C/C++
 vim.lsp.enable "ts_ls" -- TypeScript
+vim.lsp.enable "tinymist" -- Typst
 
 -- ======[Autocommands]======
 -- Applies Glyph-Pallette
