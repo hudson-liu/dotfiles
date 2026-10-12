@@ -18,6 +18,8 @@ auxiliary_pkgs = [
   "thunar-archive-plugin",
   "thunar-media-tags-plugin",
   "thunar-volman",
+  "gvfs",
+  "udisks2",
   "ntfs-3g",
   # Zathura
   "zathura-pdf-mupdf",
