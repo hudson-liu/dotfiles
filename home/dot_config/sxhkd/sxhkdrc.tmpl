@@ -17,16 +17,14 @@ super + shift + y
   bash ~/.local/bin/desk.sh
 
 # -----[Controls]-----
-# Some laptops come w/ firmware-based brightness controls.
-# Uncommment these controls if yours doesn't.
-# XF86MonBrightness{Up,Down}  
-#   brightnessctl set 5%{+,-}
-# XF86AudioRaiseVolume
-#   pactl set-sink-volume 0 +5%
-# XF86AudioLowerVolume
-#   pactl set-sink-volume 0 -5%
-# XF86AudioMute
-#   pactl set-sink-mute 0 toggle
+XF86MonBrightness{Up,Down}  
+  brightnessctl set 5%{+,-}
+XF86AudioRaiseVolume
+  pactl set-sink-volume 0 +5%
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 -5%
+XF86AudioMute
+  pactl set-sink-mute 0 toggle
 
 # -----[Tabs (Tabbed)]-----
 # Add current window to tabbed window
