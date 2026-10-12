@@ -17,9 +17,11 @@
 {{- writeToStdout "\n\x1b[34mSECONDARY-MONITOR (.custom_data.secondary_monitor):\x1b[0m Enter your secondary monitor. This acts as your fallback and/or auxiliary monitor.\n" -}}
 {{- $secondary_monitor := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "DP-2" -}}
 
-{{- writeToStdout "\n\x1b[34mCUSTOM-DPI (.custom_data.dpi):\x1b[0m Enter your DPI. Default is 96 DPI (100% scaling), for higher-res monitors, use 144 (150% scaling).\n" -}}
+{{- writeToStdout "\n\x1b[34mDPI (.custom_data.dpi):\x1b[0m Enter your DPI. Default is 96 DPI (100% scaling), for higher-res monitors, use 144 (150% scaling).\n" -}}
 {{- $dpi := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "96" -}}
 
+{{- writeToStdout "\n\x1b[34mDPI (.custom_data.saturation):\x1b[0m Enter your saturation, out of 1.\n" -}}
+{{- $saturation := promptString "\x1b[31m[TYPE HERE]>\x1b[0m " "1" -}}
 
 {{/*========[Polybar]========*/}}
 
@@ -49,6 +51,7 @@
   primary_monitor = {{ $primary_monitor | quote }}
   secondary_monitor = {{ $secondary_monitor | quote }}
   dpi = {{ $dpi }}
+  saturation = {{ $saturation }}
 [data.polybar]
   backlight = {{ $backlight | quote }}
   battery = {{ $battery | quote }}
