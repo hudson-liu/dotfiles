@@ -35,7 +35,9 @@ chezmoi apply
 ```
 (I don't recommend using `chezmoi init --apply hudson-liu`, as errors can potentially occur during cloning and initialization. Separate commands help with identifying which step went wrong.)
 
-After the third command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. The setup is complete upon reboot. The generated `~/.config/chezmoi/chezmoi.toml` can be manually edited with any text editor. Updates to the package list in `.chezmoidata/packages.toml` will take effect upon re-running `chezmoi apply`
+After the third command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. The setup is complete upon reboot. The generated `~/.config/chezmoi/chezmoi.toml` can be manually edited with any text editor. Updates to the package list in `.chezmoidata/packages.toml` will take effect upon re-running `chezmoi apply`.
+
+A note about alignment: This setup was done for my Asus Zenbook S16, where I set the DPI to 144 across applications. This can and will change (look too large/small) between displays. As such, you may have to tweak the font sizes in Polybar, Rofi, and other apps, for everything to display nicely. I tried my best to make everything scale in terms of the DPI variable stored during Chezmoi initialization, but it may not work perfectly.
 
 ## Screenshots + Demo
 

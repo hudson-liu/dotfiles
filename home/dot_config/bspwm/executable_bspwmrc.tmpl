@@ -23,8 +23,8 @@ feh --bg-fill ~/pictures/wallpapers/"Tokyo Night Abstract.png"&
 
 # -----[BSPWM Configuration]-----
 bspc monitor -d α β '|' γ δ ε ζ '|' η θ
-bspc config border_width         3
-bspc config window_gap           20
+bspc config border_width         {{ mulf 3 (divf .dpi 96) }}
+bspc config window_gap           {{ mulf 20 (divf .dpi 96) }}
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
