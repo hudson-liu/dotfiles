@@ -37,7 +37,12 @@ chezmoi apply
 
 After the third command, Chezmoi will prompt various questions from `.chezmoi.toml.tmpl`. The setup is complete upon reboot. The generated `~/.config/chezmoi/chezmoi.toml` can be manually edited with any text editor. Updates to the package list in `.chezmoidata/packages.toml` will take effect upon re-running `chezmoi apply`.
 
-A note about alignment: This setup was done for my Asus Zenbook S16, where I set the DPI to 144 across applications. This can and will change (look too large/small) between displays. As such, you may have to tweak the font sizes in Polybar, Rofi, and other apps, for everything to display nicely. I tried my best to make everything scale in terms of the DPI variable stored during Chezmoi initialization, but it may not work perfectly.
+A note about alignment: This setup was done for my Asus Zenbook S16, and later tested on my Thinkpad T16, where I set the DPI to 144 (resp. 96) across applications. This can and will change (look too large/small) between displays. As such, you may have to tweak the font sizes in Polybar, Rofi, and other apps, for everything to display nicely. In theory it should scale in terms of the DPI variable stored during Chezmoi initialization, but it may not work perfectly.
+
+To ensure the dark theme is a consistent default across applications, run:
+```bash
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+```
 
 ## Screenshots + Demo
 
