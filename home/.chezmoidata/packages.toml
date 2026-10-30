@@ -21,6 +21,7 @@ auxiliary_pkgs = [
   "gvfs",
   "udisks2",
   "ntfs-3g",
+  "poppler-glib",
   # Zathura
   "zathura-pdf-mupdf",
   # Neovim
