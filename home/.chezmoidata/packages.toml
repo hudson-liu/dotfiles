@@ -15,7 +15,7 @@ core_apps = [
 auxiliary_pkgs = [
   # Thunar
   "tumbler",
-  "thunar-archive-plugin",
+  "thunar-archive-plugin", "7zip", "zip", "unzip",
   "thunar-media-tags-plugin",
   "thunar-volman",
   "gvfs",
@@ -106,5 +106,6 @@ all = [
   "tokyonight-gtk-theme-git",
   "gtk-engine-murrine",
   "tumbler-extra-thumbnailers",
-  "tex-fmt"
+  "tex-fmt",
+  "vibrant-cli",
 ]
